@@ -10,6 +10,7 @@
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
 		0ED018242735AD3D00072589 /* MergicianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018232735AD3D00072589 /* MergicianTests.swift */; };
+		0ED018402735B13D00072589 /* GitLabAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED0183F2735B13D00072589 /* GitLabAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0ED0181A2735AD3D00072589 /* Mergician.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mergician.entitlements; sourceTree = "<group>"; };
 		0ED0181F2735AD3D00072589 /* MergicianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MergicianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED018232735AD3D00072589 /* MergicianTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergicianTests.swift; sourceTree = "<group>"; };
+		0ED0183D2735B0F900072589 /* GitLabAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GitLabAPI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED018402735B13D00072589 /* GitLabAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +55,11 @@
 		0ED018052735AD3D00072589 = {
 			isa = PBXGroup;
 			children = (
+				0ED0183D2735B0F900072589 /* GitLabAPI */,
 				0ED018102735AD3D00072589 /* Mergician */,
 				0ED018222735AD3D00072589 /* MergicianTests */,
 				0ED0180F2735AD3D00072589 /* Products */,
+				0ED0183E2735B13D00072589 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +98,13 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		0ED0183E2735B13D00072589 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +121,9 @@
 			dependencies = (
 			);
 			name = Mergician;
+			packageProductDependencies = (
+				0ED0183F2735B13D00072589 /* GitLabAPI */,
+			);
 			productName = Mergician;
 			productReference = 0ED0180E2735AD3D00072589 /* Mergician.app */;
 			productType = "com.apple.product-type.application";
@@ -465,6 +480,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0ED0183F2735B13D00072589 /* GitLabAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GitLabAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0ED018062735AD3D00072589 /* Project object */;
 }
