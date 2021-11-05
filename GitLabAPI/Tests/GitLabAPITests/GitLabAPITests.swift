@@ -10,20 +10,20 @@ final class GitLabAPITests: XCTestCase {
         XCTAssertNotNil(sut)
     }
 
-    func test_GetCurrentUser_CreatesURLRequest() throws {
+    func test_GetCurrentUser_CreatesURLRequest() async throws {
         let sut = try makeSUT()
 
-        sut.get(.currentUser) { _, _, _ in }
+        _ = try await sut.get(.currentUser)
 
         XCTAssertEqual(session.request?.url?.absoluteString, "https://git.abc.com/api/v4/user")
     }
 
     // MARK: - Helpers
 
-    func test_Get_AddsPrivateToken() throws {
+    func test_Get_AddsPrivateToken() async throws {
         let sut = try makeSUT()
 
-        sut.get(.currentUser) { _, _, _ in }
+        _ = try await sut.get(.currentUser)
 
         XCTAssertEqual(session.request?.allHTTPHeaderFields?["PRIVATE-TOKEN"], "abc")
     }

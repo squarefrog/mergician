@@ -16,14 +16,10 @@ public struct GitLabAPI {
 
     }
 
-    public func get(_ endpoint: Endpoint, completion: @escaping DataTaskResult) {
-        let url = baseURL.appendingPathComponent(endpoint.path)
-
-        var request = URLRequest(url: url)
-        request.addValue(token, forHTTPHeaderField: "PRIVATE-TOKEN")
-
-        let task = session.dataTask(with: request, completionHandler: completion)
-        task.resume()
+    public func get(_ endpoint: Endpoint) async throws -> Data {
+        let request = makeRequest(for: endpoint)
+        let (data, _) = try await session.fetchData(for: request)
+        return data
     }
 }
 
@@ -41,5 +37,12 @@ extension GitLabAPI {
         }
 
         return baseURL
+    }
+
+    private func makeRequest(for endpoint: Endpoint) -> URLRequest {
+        let url = baseURL.appendingPathComponent(endpoint.path)
+        var request = URLRequest(url: url)
+        request.addValue(token, forHTTPHeaderField: "PRIVATE-TOKEN")
+        return request
     }
 }
