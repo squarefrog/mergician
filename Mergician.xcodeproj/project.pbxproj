@@ -112,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ED018332735AD3D00072589 /* Build configuration list for PBXNativeTarget "Mergician" */;
 			buildPhases = (
+				0E7A60852736B0B9000AE39E /* SwiftLint */,
 				0ED0180A2735AD3D00072589 /* Sources */,
 				0ED0180B2735AD3D00072589 /* Frameworks */,
 				0ED0180C2735AD3D00072589 /* Resources */,
@@ -201,6 +202,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E7A60852736B0B9000AE39E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0ED0180A2735AD3D00072589 /* Sources */ = {
