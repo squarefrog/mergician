@@ -32,4 +32,16 @@ final class EndpointTests: XCTestCase {
             "https://git.abc.com/api/v4/projects?web_url=\(urlString)"
         )
     }
+
+    func test_GetMergeRequests_CreatesURLRequest() async throws {
+        let sut = try makeAPI(with: session)
+        let projectId = 10
+
+        _ = try await sut.get(.mergeRequests(for: projectId))
+
+        XCTAssertEqual(
+            session.request?.url?.absoluteString,
+            "https://git.abc.com/api/v4/projects/\(projectId)/merge_requests"
+        )
+    }
 }
