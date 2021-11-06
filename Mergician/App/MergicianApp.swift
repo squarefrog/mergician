@@ -10,5 +10,10 @@ struct MergicianApp: App {
         WindowGroup {
             Text("Hello world")
         }
+
+        Settings {
+            SettingsView()
+                .frame(width: 350)
+        }
     }
 }

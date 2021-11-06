@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E7A60882736C681000AE39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* SettingsView.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
 		0ED018242735AD3D00072589 /* MergicianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018232735AD3D00072589 /* MergicianTests.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E7A60872736C681000AE39E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0ED0180E2735AD3D00072589 /* Mergician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mergician.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED018112735AD3D00072589 /* MergicianApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergicianApp.swift; sourceTree = "<group>"; };
 		0ED018152735AD3D00072589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7A60862736C66A000AE39E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0E7A60872736C681000AE39E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		0ED018052735AD3D00072589 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		0ED018102735AD3D00072589 /* Mergician */ = {
 			isa = PBXGroup;
 			children = (
+				0E7A60862736C66A000AE39E /* Settings */,
 				0ED0183C2735ADD200072589 /* App */,
 			);
 			path = Mergician;
@@ -230,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */,
+				0E7A60882736C681000AE39E /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
