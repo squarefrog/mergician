@@ -7,11 +7,11 @@ enum GitLabError: Error {
 public struct GitLabAPI {
     private let token: String
     private let session: URLSessionProtocol
-    private let baseURL: URL
+    private let components: URLComponents
 
     public init(token: String, projectURL: URL, urlSession: URLSessionProtocol = URLSession.shared) throws {
         self.token = token
-        self.baseURL = try Self.makeBaseURL(from: projectURL)
+        self.components = try Self.makeURLComponents(from: projectURL)
         self.session = urlSession
 
     }
@@ -29,7 +29,7 @@ public struct GitLabAPI {
 }
 
 extension GitLabAPI {
-    private static func makeBaseURL(from url: URL) throws -> URL {
+    private static func makeURLComponents(from url: URL) throws -> URLComponents {
         var components = URLComponents()
 
         components.scheme = url.scheme
@@ -37,16 +37,22 @@ extension GitLabAPI {
         components.port = url.port
         components.path = "/api/v4/"
 
-        guard let baseURL = components.url else {
+        guard components.url != nil else {
             throw GitLabError.invalidProjectURL
         }
 
-        return baseURL
+        return components
     }
 
     private func makeRequest(for endpoint: Endpoint) -> URLRequest {
-        let url = baseURL.appendingPathComponent(endpoint.path)
-        var request = URLRequest(url: url)
+        var components = self.components
+        components.path.append(contentsOf: endpoint.path)
+
+        if !endpoint.queryItems.isEmpty {
+            components.queryItems = endpoint.queryItems
+        }
+
+        var request = URLRequest(url: components.url!)
         request.addValue(token, forHTTPHeaderField: "PRIVATE-TOKEN")
         return request
     }

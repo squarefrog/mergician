@@ -19,4 +19,17 @@ final class EndpointTests: XCTestCase {
 
         XCTAssertEqual(session.request?.url?.absoluteString, "https://git.abc.com/api/v4/user")
     }
+
+    func test_GetProject_CreatesURLRequest() async throws {
+        let sut = try makeAPI(with: session)
+        let urlString = "https://git.abc.com/team/project"
+        let url = URL(string: urlString)!
+
+        _ = try await sut.get(.project(url: url))
+
+        XCTAssertEqual(
+            session.request?.url?.absoluteString,
+            "https://git.abc.com/api/v4/projects?web_url=\(urlString)"
+        )
+    }
 }
