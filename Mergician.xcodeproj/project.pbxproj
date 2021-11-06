@@ -71,8 +71,7 @@
 		0E104BE52736D659007B1FA2 /* MergeRequests */ = {
 			isa = PBXGroup;
 			children = (
-				0E104BE82736D95F007B1FA2 /* Author.swift */,
-				0E104BE62736D66B007B1FA2 /* MergeRequest.swift */,
+				0E104C40273719C7007B1FA2 /* Models */,
 			);
 			path = MergeRequests;
 			sourceTree = "<group>";
@@ -80,7 +79,7 @@
 		0E104BEA2736DF86007B1FA2 /* MergeRequests */ = {
 			isa = PBXGroup;
 			children = (
-				0E104BEE2736E18E007B1FA2 /* MergeRequestTests.swift */,
+				0E104C4127371A1B007B1FA2 /* Models */,
 			);
 			path = MergeRequests;
 			sourceTree = "<group>";
@@ -110,6 +109,23 @@
 				0E104BEC2736DF9A007B1FA2 /* merge_requests.json */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		0E104C40273719C7007B1FA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E104BE82736D95F007B1FA2 /* Author.swift */,
+				0E104BE62736D66B007B1FA2 /* MergeRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E104C4127371A1B007B1FA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E104BEE2736E18E007B1FA2 /* MergeRequestTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0E7A60862736C66A000AE39E /* Settings */ = {
