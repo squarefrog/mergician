@@ -19,6 +19,9 @@
 		0E104C4527371A77007B1FA2 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4427371A77007B1FA2 /* ProjectTests.swift */; };
 		0E104C4727371A97007B1FA2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4627371A97007B1FA2 /* Project.swift */; };
 		0E104C4927371B05007B1FA2 /* Project+example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4827371B05007B1FA2 /* Project+example.swift */; };
+		0E104C4B27371DAE007B1FA2 /* approvals.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E104C4A27371DAE007B1FA2 /* approvals.json */; };
+		0E104C4D27371DC8007B1FA2 /* Approvals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4C27371DC8007B1FA2 /* Approvals.swift */; };
+		0E104C4F27371ECF007B1FA2 /* ApprovalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4E27371ECF007B1FA2 /* ApprovalsTests.swift */; };
 		0E7A60882736C681000AE39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* SettingsView.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		0E104C4427371A77007B1FA2 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
 		0E104C4627371A97007B1FA2 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		0E104C4827371B05007B1FA2 /* Project+example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+example.swift"; sourceTree = "<group>"; };
+		0E104C4A27371DAE007B1FA2 /* approvals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = approvals.json; sourceTree = "<group>"; };
+		0E104C4C27371DC8007B1FA2 /* Approvals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Approvals.swift; sourceTree = "<group>"; };
+		0E104C4E27371ECF007B1FA2 /* ApprovalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalsTests.swift; sourceTree = "<group>"; };
 		0E7A60872736C681000AE39E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0ED0180E2735AD3D00072589 /* Mergician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mergician.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED018112735AD3D00072589 /* MergicianApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergicianApp.swift; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				0E104C2D27371075007B1FA2 /* Fixture.swift */,
+				0E104C4A27371DAE007B1FA2 /* approvals.json */,
 				0E104BEC2736DF9A007B1FA2 /* merge_requests.json */,
 				0E104C4227371A5A007B1FA2 /* project.json */,
 			);
@@ -124,6 +131,7 @@
 		0E104C40273719C7007B1FA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0E104C4C27371DC8007B1FA2 /* Approvals.swift */,
 				0E104BE82736D95F007B1FA2 /* Author.swift */,
 				0E104BE62736D66B007B1FA2 /* MergeRequest.swift */,
 				0E104C4627371A97007B1FA2 /* Project.swift */,
@@ -134,6 +142,7 @@
 		0E104C4127371A1B007B1FA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0E104C4E27371ECF007B1FA2 /* ApprovalsTests.swift */,
 				0E104BEE2736E18E007B1FA2 /* MergeRequestTests.swift */,
 				0E104C4427371A77007B1FA2 /* ProjectTests.swift */,
 			);
@@ -292,6 +301,7 @@
 			files = (
 				0E104C4327371A5A007B1FA2 /* project.json in Resources */,
 				0E104C3C27371547007B1FA2 /* merge_requests.json in Resources */,
+				0E104C4B27371DAE007B1FA2 /* approvals.json in Resources */,
 				0ED018162735AD3D00072589 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E104C4D27371DC8007B1FA2 /* Approvals.swift in Sources */,
 				0E104C3A27371511007B1FA2 /* MergeRequest+examples.swift in Sources */,
 				0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */,
 				0E104BF22736EB82007B1FA2 /* DateFormatter+iso8601Full.swift in Sources */,
@@ -349,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E104BEF2736E18E007B1FA2 /* MergeRequestTests.swift in Sources */,
+				0E104C4F27371ECF007B1FA2 /* ApprovalsTests.swift in Sources */,
 				0E104C4527371A77007B1FA2 /* ProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
