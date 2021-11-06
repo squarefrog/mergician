@@ -1,9 +1,5 @@
 import Foundation
 
-enum GitLabError: Error {
-    case invalidProjectURL
-}
-
 public struct GitLabAPI {
     private let token: String
     private let session: URLSessionProtocol
