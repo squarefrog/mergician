@@ -9,6 +9,12 @@ struct MergeRequest: Decodable, Identifiable {
     let author: Author
     let mergeStatus: Status
     let webUrl: URL
+
+    private(set) var approvals: Approvals?
+
+    mutating func update(with approvals: Approvals) {
+        self.approvals = approvals
+    }
 }
 
 // MARK: - Merge Status

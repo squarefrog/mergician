@@ -24,4 +24,14 @@ class MergeRequestTests: XCTestCase {
         XCTAssertEqual(author.name, "Rusty Shackleford")
         XCTAssertEqual(author.avatarUrl.absoluteString, "http://via.placeholder.com/64x64")
     }
+
+    func test_MergeRequest_CanBeUpdated_WithApprovals() throws {
+        let approvals = Approvals(required: 2, remaining: 1)
+        var mergeRequest = try XCTUnwrap(MergeRequest.exampleData.first)
+
+        mergeRequest.update(with: approvals)
+
+        XCTAssertEqual(mergeRequest.approvals?.required, approvals.required)
+        XCTAssertEqual(mergeRequest.approvals?.remaining, approvals.remaining)
+    }
 }
