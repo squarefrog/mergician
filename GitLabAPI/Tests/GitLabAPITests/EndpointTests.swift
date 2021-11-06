@@ -44,4 +44,29 @@ final class EndpointTests: XCTestCase {
             "https://git.abc.com/api/v4/projects/\(projectId)/merge_requests"
         )
     }
+
+    func test_GetApprovalsForProject_CreatesURLRequest() async throws {
+        let sut = try makeAPI(with: session)
+        let projectId = 10
+
+        _ = try await sut.get(.approvals(for: projectId))
+
+        XCTAssertEqual(
+            session.request?.url?.absoluteString,
+            "https://git.abc.com/api/v4/projects/\(projectId)/approvals"
+        )
+    }
+
+    func test_GetApprovalsForMergeRequest_CreatesURLRequest() async throws {
+        let sut = try makeAPI(with: session)
+        let mrId = 1
+        let projectId = 10
+
+        _ = try await sut.get(.approvals(for: mrId, in: projectId))
+
+        XCTAssertEqual(
+            session.request?.url?.absoluteString,
+            "https://git.abc.com/api/v4/projects/\(projectId)/merge_requests/\(mrId)/approvals"
+        )
+    }
 }
