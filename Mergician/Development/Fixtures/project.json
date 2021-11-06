@@ -1,0 +1,7 @@
+{
+  "id": 10,
+  "description": "",
+  "name": "My App",
+  "web_url": "https://git.example.site/my-project/ios-app",
+  "approvals_before_merge": 2
+}
