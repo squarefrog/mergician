@@ -7,6 +7,12 @@ final class MockURLSession: URLSessionProtocol {
 
     func fetchData(for request: URLRequest) async throws -> (Data, URLResponse) {
         self.request = request
-        return (Data(), URLResponse())
+        let response = HTTPURLResponse(
+            url: request.url!,
+            statusCode: statusCode,
+            httpVersion: nil,
+            headerFields: nil
+        )!
+        return (Data(), response as URLResponse)
     }
 }

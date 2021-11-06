@@ -18,7 +18,12 @@ public struct GitLabAPI {
 
     public func get(_ endpoint: Endpoint) async throws -> Data {
         let request = makeRequest(for: endpoint)
-        let (data, _) = try await session.fetchData(for: request)
+        let (data, response) = try await session.fetchData(for: request)
+
+        if let http = response as? HTTPURLResponse, http.statusCode > 299 {
+            throw NetworkError.serverError(http.statusCode)
+        }
+
         return data
     }
 }
