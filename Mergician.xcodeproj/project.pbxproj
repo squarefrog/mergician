@@ -22,6 +22,10 @@
 		0E104C4B27371DAE007B1FA2 /* approvals.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E104C4A27371DAE007B1FA2 /* approvals.json */; };
 		0E104C4D27371DC8007B1FA2 /* Approvals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4C27371DC8007B1FA2 /* Approvals.swift */; };
 		0E104C4F27371ECF007B1FA2 /* ApprovalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4E27371ECF007B1FA2 /* ApprovalsTests.swift */; };
+		0E104C53273725B7007B1FA2 /* MergeRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C52273725B7007B1FA2 /* MergeRequestList.swift */; };
+		0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C552737D7D6007B1FA2 /* Comments.swift */; };
+		0E104C582737D80D007B1FA2 /* MergeRequestRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C572737D80D007B1FA2 /* MergeRequestRow.swift */; };
+		0E104C5A2737DAE6007B1FA2 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C592737DAE6007B1FA2 /* Metadata.swift */; };
 		0E7A60882736C681000AE39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* SettingsView.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
@@ -54,6 +58,10 @@
 		0E104C4A27371DAE007B1FA2 /* approvals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = approvals.json; sourceTree = "<group>"; };
 		0E104C4C27371DC8007B1FA2 /* Approvals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Approvals.swift; sourceTree = "<group>"; };
 		0E104C4E27371ECF007B1FA2 /* ApprovalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalsTests.swift; sourceTree = "<group>"; };
+		0E104C52273725B7007B1FA2 /* MergeRequestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequestList.swift; sourceTree = "<group>"; };
+		0E104C552737D7D6007B1FA2 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		0E104C572737D80D007B1FA2 /* MergeRequestRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequestRow.swift; sourceTree = "<group>"; };
+		0E104C592737DAE6007B1FA2 /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		0E7A60872736C681000AE39E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0ED0180E2735AD3D00072589 /* Mergician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mergician.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED018112735AD3D00072589 /* MergicianApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergicianApp.swift; sourceTree = "<group>"; };
@@ -85,6 +93,7 @@
 		0E104BE52736D659007B1FA2 /* MergeRequests */ = {
 			isa = PBXGroup;
 			children = (
+				0E104C542737D7CD007B1FA2 /* Views */,
 				0E104C40273719C7007B1FA2 /* Models */,
 			);
 			path = MergeRequests;
@@ -147,6 +156,17 @@
 				0E104C4427371A77007B1FA2 /* ProjectTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0E104C542737D7CD007B1FA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E104C552737D7D6007B1FA2 /* Comments.swift */,
+				0E104C572737D80D007B1FA2 /* MergeRequestRow.swift */,
+				0E104C52273725B7007B1FA2 /* MergeRequestList.swift */,
+				0E104C592737DAE6007B1FA2 /* Metadata.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0E7A60862736C66A000AE39E /* Settings */ = {
@@ -346,7 +366,11 @@
 				0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */,
 				0E104BF22736EB82007B1FA2 /* DateFormatter+iso8601Full.swift in Sources */,
 				0E104BE72736D66B007B1FA2 /* MergeRequest.swift in Sources */,
+				0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */,
+				0E104C53273725B7007B1FA2 /* MergeRequestList.swift in Sources */,
+				0E104C5A2737DAE6007B1FA2 /* Metadata.swift in Sources */,
 				0E104C3F2737177C007B1FA2 /* JSONDecoder+default.swift in Sources */,
+				0E104C582737D80D007B1FA2 /* MergeRequestRow.swift in Sources */,
 				0E104BE92736D95F007B1FA2 /* Author.swift in Sources */,
 				0E104C4927371B05007B1FA2 /* Project+example.swift in Sources */,
 				0E7A60882736C681000AE39E /* SettingsView.swift in Sources */,
