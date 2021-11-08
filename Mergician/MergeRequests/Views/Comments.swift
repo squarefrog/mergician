@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Comments: View {
-    private let count: Int
+    let count: Int
 
     var body: some View {
         HStack(spacing: 3) {
@@ -10,9 +10,5 @@ struct Comments: View {
         }
         .accessibilityElement(children: .ignore)
         .accessibility(label: Text("\(count) comments"))
-    }
-
-    init(_ count: Int) {
-        self.count = count
     }
 }

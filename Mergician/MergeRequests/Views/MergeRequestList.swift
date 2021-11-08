@@ -1,28 +1,20 @@
 import SwiftUI
 
 struct MergeRequestList: View {
-    let mergeRequests = MergeRequest.exampleData
-
-    private let formatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .short
-        formatter.doesRelativeDateFormatting = true
-        return formatter
-    }()
+    @ObservedObject var dataStore: DataStore
 
     var body: some View {
-        List {
-            ForEach(mergeRequests) { mr in
-                MergeRequestRow(mr: mr, formatter: formatter)
-            }
+        List(dataStore.items) { viewModel in
+            MergeRequestRow(viewModel: viewModel)
+        }
+        .onAppear {
+            dataStore.load()
         }
     }
 }
 
 struct MergeRequestsView_Previews: PreviewProvider {
     static var previews: some View {
-        MergeRequestList()
-//            .frame(width: 400)
+        MergeRequestList(dataStore: .init())
     }
 }
