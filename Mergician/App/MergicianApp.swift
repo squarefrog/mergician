@@ -6,6 +6,8 @@ import SwiftUI
 
 @main
 struct MergicianApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     var body: some Scene {
         WindowGroup {
             Text("Hello world")
