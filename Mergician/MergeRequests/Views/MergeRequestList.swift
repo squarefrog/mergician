@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MergeRequestList: View {
-    @ObservedObject var dataStore: DataStore
+    @StateObject var dataStore = DataStore()
 
     var body: some View {
         List(dataStore.items) { viewModel in
@@ -15,6 +15,6 @@ struct MergeRequestList: View {
 
 struct MergeRequestsView_Previews: PreviewProvider {
     static var previews: some View {
-        MergeRequestList(dataStore: .init())
+        MergeRequestList()
     }
 }
