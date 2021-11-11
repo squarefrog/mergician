@@ -26,8 +26,8 @@ struct SettingsView: View {
                 }
                 .keyboardShortcut(.cancelAction)
 
-                Button("Apply") {
-                    print("Apply")
+                Button("OK") {
+                    print("OK")
                 }
                 .keyboardShortcut(.defaultAction)
             }
