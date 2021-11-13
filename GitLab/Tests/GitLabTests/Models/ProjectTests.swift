@@ -1,5 +1,5 @@
 import XCTest
-@testable import Mergician
+@testable import GitLab
 
 class ProjectTests: XCTestCase {
     func test_Project_CanBeDecoded() throws {

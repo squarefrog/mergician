@@ -27,6 +27,10 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "GitLabTests",
-            dependencies: ["GitLab"]),
+            dependencies: ["GitLab"],
+            resources: [
+                .process("Resources"),
+            ]
+        ),
     ]
 )

@@ -1,5 +1,5 @@
 import XCTest
-@testable import Mergician
+@testable import GitLab
 
 class ApprovalsTests: XCTestCase {
     func test_Approvals_CanBeDecoded() throws {

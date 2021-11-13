@@ -7,21 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E104BE72736D66B007B1FA2 /* MergeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104BE62736D66B007B1FA2 /* MergeRequest.swift */; };
-		0E104BE92736D95F007B1FA2 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104BE82736D95F007B1FA2 /* Author.swift */; };
-		0E104BEF2736E18E007B1FA2 /* MergeRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104BEE2736E18E007B1FA2 /* MergeRequestTests.swift */; };
 		0E104BF22736EB82007B1FA2 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104BF12736EB82007B1FA2 /* DateFormatter.swift */; };
 		0E104C3927371511007B1FA2 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C2D27371075007B1FA2 /* Fixture.swift */; };
 		0E104C3A27371511007B1FA2 /* MergeRequest+examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C2B27370EF7007B1FA2 /* MergeRequest+examples.swift */; };
-		0E104C3C27371547007B1FA2 /* merge_requests.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E104BEC2736DF9A007B1FA2 /* merge_requests.json */; };
-		0E104C3F2737177C007B1FA2 /* JSONDecoder+default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C3E2737177C007B1FA2 /* JSONDecoder+default.swift */; };
-		0E104C4327371A5A007B1FA2 /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E104C4227371A5A007B1FA2 /* project.json */; };
-		0E104C4527371A77007B1FA2 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4427371A77007B1FA2 /* ProjectTests.swift */; };
-		0E104C4727371A97007B1FA2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4627371A97007B1FA2 /* Project.swift */; };
 		0E104C4927371B05007B1FA2 /* Project+example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4827371B05007B1FA2 /* Project+example.swift */; };
-		0E104C4B27371DAE007B1FA2 /* approvals.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E104C4A27371DAE007B1FA2 /* approvals.json */; };
-		0E104C4D27371DC8007B1FA2 /* Approvals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4C27371DC8007B1FA2 /* Approvals.swift */; };
-		0E104C4F27371ECF007B1FA2 /* ApprovalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4E27371ECF007B1FA2 /* ApprovalsTests.swift */; };
 		0E104C53273725B7007B1FA2 /* MergeRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C52273725B7007B1FA2 /* MergeRequestList.swift */; };
 		0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C552737D7D6007B1FA2 /* Comments.swift */; };
 		0E104C582737D80D007B1FA2 /* MergeRequestRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C572737D80D007B1FA2 /* MergeRequestRow.swift */; };
@@ -50,21 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E104BE62736D66B007B1FA2 /* MergeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequest.swift; sourceTree = "<group>"; };
-		0E104BE82736D95F007B1FA2 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
-		0E104BEC2736DF9A007B1FA2 /* merge_requests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = merge_requests.json; sourceTree = "<group>"; };
-		0E104BEE2736E18E007B1FA2 /* MergeRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequestTests.swift; sourceTree = "<group>"; };
 		0E104BF12736EB82007B1FA2 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		0E104C2B27370EF7007B1FA2 /* MergeRequest+examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MergeRequest+examples.swift"; sourceTree = "<group>"; };
 		0E104C2D27371075007B1FA2 /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
-		0E104C3E2737177C007B1FA2 /* JSONDecoder+default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+default.swift"; sourceTree = "<group>"; };
-		0E104C4227371A5A007B1FA2 /* project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = project.json; sourceTree = "<group>"; };
-		0E104C4427371A77007B1FA2 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
-		0E104C4627371A97007B1FA2 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		0E104C4827371B05007B1FA2 /* Project+example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+example.swift"; sourceTree = "<group>"; };
-		0E104C4A27371DAE007B1FA2 /* approvals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = approvals.json; sourceTree = "<group>"; };
-		0E104C4C27371DC8007B1FA2 /* Approvals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Approvals.swift; sourceTree = "<group>"; };
-		0E104C4E27371ECF007B1FA2 /* ApprovalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalsTests.swift; sourceTree = "<group>"; };
 		0E104C52273725B7007B1FA2 /* MergeRequestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequestList.swift; sourceTree = "<group>"; };
 		0E104C552737D7D6007B1FA2 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		0E104C572737D80D007B1FA2 /* MergeRequestRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequestRow.swift; sourceTree = "<group>"; };
@@ -114,19 +92,10 @@
 			path = MergeRequests;
 			sourceTree = "<group>";
 		};
-		0E104BEA2736DF86007B1FA2 /* MergeRequests */ = {
-			isa = PBXGroup;
-			children = (
-				0E104C4127371A1B007B1FA2 /* Models */,
-			);
-			path = MergeRequests;
-			sourceTree = "<group>";
-		};
 		0E104BF02736EB69007B1FA2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0E104BF12736EB82007B1FA2 /* DateFormatter.swift */,
-				0E104C3E2737177C007B1FA2 /* JSONDecoder+default.swift */,
 				0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */,
 			);
 			path = Extensions;
@@ -146,9 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				0E104C2D27371075007B1FA2 /* Fixture.swift */,
-				0E104C4A27371DAE007B1FA2 /* approvals.json */,
-				0E104BEC2736DF9A007B1FA2 /* merge_requests.json */,
-				0E104C4227371A5A007B1FA2 /* project.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -156,21 +122,7 @@
 		0E104C40273719C7007B1FA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0E104C4C27371DC8007B1FA2 /* Approvals.swift */,
-				0E104BE82736D95F007B1FA2 /* Author.swift */,
-				0E104BE62736D66B007B1FA2 /* MergeRequest.swift */,
-				0E104C4627371A97007B1FA2 /* Project.swift */,
 				0E104C5B2737F1E8007B1FA2 /* ViewModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0E104C4127371A1B007B1FA2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0E104C4E27371ECF007B1FA2 /* ApprovalsTests.swift */,
-				0E104BEE2736E18E007B1FA2 /* MergeRequestTests.swift */,
-				0E104C4427371A77007B1FA2 /* ProjectTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,7 +184,6 @@
 		0ED018222735AD3D00072589 /* MergicianTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E104BEA2736DF86007B1FA2 /* MergeRequests */,
 			);
 			path = MergicianTests;
 			sourceTree = "<group>";
@@ -340,9 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E104C4327371A5A007B1FA2 /* project.json in Resources */,
-				0E104C3C27371547007B1FA2 /* merge_requests.json in Resources */,
-				0E104C4B27371DAE007B1FA2 /* approvals.json in Resources */,
 				0ED018162735AD3D00072589 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,27 +331,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */,
-				0E104C4D27371DC8007B1FA2 /* Approvals.swift in Sources */,
 				0E104C3A27371511007B1FA2 /* MergeRequest+examples.swift in Sources */,
 				0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */,
 				0E104BF22736EB82007B1FA2 /* DateFormatter.swift in Sources */,
 				0E104C5E27381B86007B1FA2 /* DataStore.swift in Sources */,
-				0E104BE72736D66B007B1FA2 /* MergeRequest.swift in Sources */,
 				0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */,
 				0E104C53273725B7007B1FA2 /* MergeRequestList.swift in Sources */,
 				0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */,
 				0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */,
 				0E104C5A2737DAE6007B1FA2 /* InfoView.swift in Sources */,
-				0E104C3F2737177C007B1FA2 /* JSONDecoder+default.swift in Sources */,
 				0E104C582737D80D007B1FA2 /* MergeRequestRow.swift in Sources */,
-				0E104BE92736D95F007B1FA2 /* Author.swift in Sources */,
 				0E104C5C2737F1E8007B1FA2 /* ViewModel.swift in Sources */,
 				0E3E254B2739B5F00095D70E /* ApprovalsView.swift in Sources */,
 				0E104C4927371B05007B1FA2 /* Project+example.swift in Sources */,
 				0E7A60882736C681000AE39E /* SettingsView.swift in Sources */,
 				0E104C3927371511007B1FA2 /* Fixture.swift in Sources */,
 				0E3E254D2739B6100095D70E /* MergeErrorView.swift in Sources */,
-				0E104C4727371A97007B1FA2 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,9 +354,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E104BEF2736E18E007B1FA2 /* MergeRequestTests.swift in Sources */,
-				0E104C4F27371ECF007B1FA2 /* ApprovalsTests.swift in Sources */,
-				0E104C4527371A77007B1FA2 /* ProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

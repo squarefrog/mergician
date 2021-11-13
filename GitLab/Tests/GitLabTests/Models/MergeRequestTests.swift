@@ -1,5 +1,5 @@
 import XCTest
-@testable import Mergician
+@testable import GitLab
 
 class MergeRequestTests: XCTestCase {
     func test_MergeRequest_CanBeDecoded() throws {
@@ -26,8 +26,11 @@ class MergeRequestTests: XCTestCase {
     }
 
     func test_MergeRequest_CanBeUpdated_WithApprovals() throws {
+        let data = Fixture.load("merge_requests")
+        let decoder = JSONDecoder.default
+        let mergeRequests = try decoder.decode([MergeRequest].self, from: data)
+        var mergeRequest = try XCTUnwrap(mergeRequests.first)
         let approvals = Approvals(required: 2, remaining: 1)
-        var mergeRequest = try XCTUnwrap(MergeRequest.exampleData.first)
 
         mergeRequest.update(with: approvals)
 
