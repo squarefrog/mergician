@@ -6,7 +6,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     lazy var popover = makePopover()
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        popover.contentViewController = NSHostingController(rootView: MergeRequestList())
+        popover.contentViewController = NSHostingController(rootView: PopoverView())
         configure(statusBarItem.button)
     }
 
@@ -38,7 +38,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func makePopover() -> NSPopover {
         let popover = NSPopover()
-        popover.contentSize = NSSize(width: 400, height: 500)
+        popover.contentSize = NSSize(width: 400, height: 400)
         popover.behavior = .transient
         popover.animates = true
         return popover
