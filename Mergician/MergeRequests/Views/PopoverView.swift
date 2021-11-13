@@ -38,7 +38,7 @@ struct PopoverView: View {
     }
 
     private func settings() {
-
+        NSApp.sendAction(Selector(("showPreferencesWindow:")), to: nil, from: nil)
     }
 
     private func quit() {
