@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct PopoverView: View {
+    @StateObject private var dataStore = DataStore()
+
     var body: some View {
         VStack {
             HStack {
@@ -19,10 +21,9 @@ struct PopoverView: View {
 
             Divider()
 
-            MergeRequestList()
+            MergeRequestList(dataStore: dataStore)
 
             Divider()
-
 
             Button(action: quit) {
                 Text("Quit")
@@ -33,7 +34,7 @@ struct PopoverView: View {
     }
 
     private func refresh() {
-
+        dataStore.load()
     }
 
     private func settings() {
