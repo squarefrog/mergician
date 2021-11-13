@@ -1,6 +1,6 @@
 import Foundation
 
-public struct GitLabAPI {
+public struct GitLab {
     private let token: String
     private let session: URLSessionProtocol
     private let components: URLComponents
@@ -24,7 +24,7 @@ public struct GitLabAPI {
     }
 }
 
-extension GitLabAPI {
+extension GitLab {
     private static func makeURLComponents(from url: URL) throws -> URLComponents {
         var components = URLComponents()
 

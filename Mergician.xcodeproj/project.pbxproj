@@ -28,6 +28,7 @@
 		0E104C5A2737DAE6007B1FA2 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C592737DAE6007B1FA2 /* InfoView.swift */; };
 		0E104C5C2737F1E8007B1FA2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C5B2737F1E8007B1FA2 /* ViewModel.swift */; };
 		0E104C5E27381B86007B1FA2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C5D27381B86007B1FA2 /* DataStore.swift */; };
+		0E1DFEA62740016100C65514 /* GitLab in Frameworks */ = {isa = PBXBuildFile; productRef = 0E1DFEA52740016100C65514 /* GitLab */; };
 		0E3E254B2739B5F00095D70E /* ApprovalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254A2739B5F00095D70E /* ApprovalsView.swift */; };
 		0E3E254D2739B6100095D70E /* MergeErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254C2739B6100095D70E /* MergeErrorView.swift */; };
 		0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E25502739BE280095D70E /* AppDelegate.swift */; };
@@ -35,7 +36,6 @@
 		0E7A60882736C681000AE39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* SettingsView.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
-		0ED018402735B13D00072589 /* GitLabAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED0183F2735B13D00072589 /* GitLabAPI */; };
 		0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEAC36273C57C30028D245 /* PopoverView.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +71,7 @@
 		0E104C592737DAE6007B1FA2 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		0E104C5B2737F1E8007B1FA2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0E104C5D27381B86007B1FA2 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		0E1DFEA42740013B00C65514 /* GitLab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GitLab; sourceTree = "<group>"; };
 		0E3E254A2739B5F00095D70E /* ApprovalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalsView.swift; sourceTree = "<group>"; };
 		0E3E254C2739B6100095D70E /* MergeErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeErrorView.swift; sourceTree = "<group>"; };
 		0E3E25502739BE280095D70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		0ED018152735AD3D00072589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ED0181A2735AD3D00072589 /* Mergician.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mergician.entitlements; sourceTree = "<group>"; };
 		0ED0181F2735AD3D00072589 /* MergicianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MergicianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ED0183D2735B0F900072589 /* GitLabAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GitLabAPI; sourceTree = "<group>"; };
 		0EDEAC36273C57C30028D245 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ED018402735B13D00072589 /* GitLabAPI in Frameworks */,
+				0E1DFEA62740016100C65514 /* GitLab in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +200,7 @@
 		0ED018052735AD3D00072589 = {
 			isa = PBXGroup;
 			children = (
-				0ED0183D2735B0F900072589 /* GitLabAPI */,
+				0E1DFEA42740013B00C65514 /* GitLab */,
 				0ED018102735AD3D00072589 /* Mergician */,
 				0ED018222735AD3D00072589 /* MergicianTests */,
 				0ED0180F2735AD3D00072589 /* Products */,
@@ -273,7 +273,7 @@
 			);
 			name = Mergician;
 			packageProductDependencies = (
-				0ED0183F2735B13D00072589 /* GitLabAPI */,
+				0E1DFEA52740016100C65514 /* GitLab */,
 			);
 			productName = Mergician;
 			productReference = 0ED0180E2735AD3D00072589 /* Mergician.app */;
@@ -684,9 +684,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0ED0183F2735B13D00072589 /* GitLabAPI */ = {
+		0E1DFEA52740016100C65514 /* GitLab */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = GitLabAPI;
+			productName = GitLab;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

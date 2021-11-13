@@ -1,5 +1,5 @@
 import Foundation
-import GitLabAPI
+import GitLab
 
 final class MockURLSession: URLSessionProtocol {
     var request: URLRequest?

@@ -1,9 +1,9 @@
 import XCTest
-import GitLabAPI
+import GitLab
 
-func makeAPI(with session: URLSessionProtocol) throws -> GitLabAPI {
+func makeAPI(with session: URLSessionProtocol) throws -> GitLab {
     let projectURL = URL(string: "https://git.abc.com/team/project")!
-    return try GitLabAPI(token: "abc", projectURL: projectURL, urlSession: session)
+    return try GitLab(token: "abc", projectURL: projectURL, urlSession: session)
 }
 
 extension XCTest {
