@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MergeRequestRow: View {
-    var viewModel: ViewModel
+    let mergeRequest: MergeRequest
 
     var body: some View {
         HStack {
@@ -11,17 +11,17 @@ struct MergeRequestRow: View {
                 .accessibility(hidden: true)
 
             VStack(alignment: .leading, spacing: 3) {
-                Text(viewModel.title)
+                Text(mergeRequest.title)
                     .bold()
                     .lineLimit(1)
 
                 HStack(spacing: 12) {
-                    Text(viewModel.author)
-                    Text(viewModel.date)
+                    Text(mergeRequest.author.name)
+                    Text(mergeRequest.lastUpdated, formatter: DateFormatter.relative)
                 }
                 .foregroundColor(.secondary)
 
-                InfoView(viewModel: viewModel)
+                InfoView(mergeRequest: mergeRequest)
                     .foregroundColor(.secondary)
                     .font(.caption)
             }

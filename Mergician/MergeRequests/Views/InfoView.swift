@@ -1,15 +1,15 @@
 import SwiftUI
 
 struct InfoView: View {
-    let viewModel: ViewModel
+    let mergeRequest: MergeRequest
 
     var body: some View {
         HStack {
-            Comments(count: viewModel.commentCount)
+            Comments(count: mergeRequest.commentCount)
 
-            ApprovalsView(viewModel: viewModel)
+            ApprovalsView(mergeRequest: mergeRequest)
 
-            if viewModel.showMergeError {
+            if mergeRequest.status == .blocked {
                 MergeErrorView()
             }
         }

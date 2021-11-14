@@ -4,8 +4,8 @@ struct MergeRequestList: View {
     @ObservedObject var dataStore: DataStore
 
     var body: some View {
-        List(dataStore.items) { viewModel in
-            MergeRequestRow(viewModel: viewModel)
+        List(dataStore.items) { mergeRequest in
+            MergeRequestRow(mergeRequest: mergeRequest)
         }
         .onAppear {
             dataStore.load()

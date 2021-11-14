@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0E104BF22736EB82007B1FA2 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104BF12736EB82007B1FA2 /* DateFormatter.swift */; };
-		0E104C3927371511007B1FA2 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C2D27371075007B1FA2 /* Fixture.swift */; };
 		0E104C3A27371511007B1FA2 /* MergeRequest+examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C2B27370EF7007B1FA2 /* MergeRequest+examples.swift */; };
-		0E104C4927371B05007B1FA2 /* Project+example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C4827371B05007B1FA2 /* Project+example.swift */; };
 		0E104C53273725B7007B1FA2 /* MergeRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C52273725B7007B1FA2 /* MergeRequestList.swift */; };
 		0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C552737D7D6007B1FA2 /* Comments.swift */; };
 		0E104C582737D80D007B1FA2 /* MergeRequestRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C572737D80D007B1FA2 /* MergeRequestRow.swift */; };
 		0E104C5A2737DAE6007B1FA2 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C592737DAE6007B1FA2 /* InfoView.swift */; };
-		0E104C5C2737F1E8007B1FA2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C5B2737F1E8007B1FA2 /* ViewModel.swift */; };
 		0E104C5E27381B86007B1FA2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E104C5D27381B86007B1FA2 /* DataStore.swift */; };
+		0E1BDB07274046F600E0DA74 /* MergeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BDB06274046F600E0DA74 /* MergeRequest.swift */; };
 		0E1DFEA62740016100C65514 /* GitLab in Frameworks */ = {isa = PBXBuildFile; productRef = 0E1DFEA52740016100C65514 /* GitLab */; };
 		0E3E254B2739B5F00095D70E /* ApprovalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254A2739B5F00095D70E /* ApprovalsView.swift */; };
 		0E3E254D2739B6100095D70E /* MergeErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254C2739B6100095D70E /* MergeErrorView.swift */; };
@@ -26,6 +24,7 @@
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
 		0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEAC36273C57C30028D245 /* PopoverView.swift */; };
+		0EE61D32274085080083FA4A /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE61D31274085080083FA4A /* ExampleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +40,12 @@
 /* Begin PBXFileReference section */
 		0E104BF12736EB82007B1FA2 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		0E104C2B27370EF7007B1FA2 /* MergeRequest+examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MergeRequest+examples.swift"; sourceTree = "<group>"; };
-		0E104C2D27371075007B1FA2 /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
-		0E104C4827371B05007B1FA2 /* Project+example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+example.swift"; sourceTree = "<group>"; };
 		0E104C52273725B7007B1FA2 /* MergeRequestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequestList.swift; sourceTree = "<group>"; };
 		0E104C552737D7D6007B1FA2 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		0E104C572737D80D007B1FA2 /* MergeRequestRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequestRow.swift; sourceTree = "<group>"; };
 		0E104C592737DAE6007B1FA2 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		0E104C5B2737F1E8007B1FA2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0E104C5D27381B86007B1FA2 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		0E1BDB06274046F600E0DA74 /* MergeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeRequest.swift; sourceTree = "<group>"; };
 		0E1DFEA42740013B00C65514 /* GitLab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GitLab; sourceTree = "<group>"; };
 		0E3E254A2739B5F00095D70E /* ApprovalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalsView.swift; sourceTree = "<group>"; };
 		0E3E254C2739B6100095D70E /* MergeErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeErrorView.swift; sourceTree = "<group>"; };
@@ -61,6 +58,7 @@
 		0ED0181A2735AD3D00072589 /* Mergician.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mergician.entitlements; sourceTree = "<group>"; };
 		0ED0181F2735AD3D00072589 /* MergicianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MergicianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDEAC36273C57C30028D245 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		0EE61D31274085080083FA4A /* ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,25 +102,15 @@
 		0E104BF327370E13007B1FA2 /* Development */ = {
 			isa = PBXGroup;
 			children = (
-				0E104C3D273715A8007B1FA2 /* Fixtures */,
 				0E104C2B27370EF7007B1FA2 /* MergeRequest+examples.swift */,
-				0E104C4827371B05007B1FA2 /* Project+example.swift */,
 			);
 			path = Development;
-			sourceTree = "<group>";
-		};
-		0E104C3D273715A8007B1FA2 /* Fixtures */ = {
-			isa = PBXGroup;
-			children = (
-				0E104C2D27371075007B1FA2 /* Fixture.swift */,
-			);
-			path = Fixtures;
 			sourceTree = "<group>";
 		};
 		0E104C40273719C7007B1FA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0E104C5B2737F1E8007B1FA2 /* ViewModel.swift */,
+				0E1BDB06274046F600E0DA74 /* MergeRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +172,7 @@
 		0ED018222735AD3D00072589 /* MergicianTests */ = {
 			isa = PBXGroup;
 			children = (
+				0EE61D31274085080083FA4A /* ExampleTests.swift */,
 			);
 			path = MergicianTests;
 			sourceTree = "<group>";
@@ -340,12 +329,10 @@
 				0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */,
 				0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */,
 				0E104C5A2737DAE6007B1FA2 /* InfoView.swift in Sources */,
+				0E1BDB07274046F600E0DA74 /* MergeRequest.swift in Sources */,
 				0E104C582737D80D007B1FA2 /* MergeRequestRow.swift in Sources */,
-				0E104C5C2737F1E8007B1FA2 /* ViewModel.swift in Sources */,
 				0E3E254B2739B5F00095D70E /* ApprovalsView.swift in Sources */,
-				0E104C4927371B05007B1FA2 /* Project+example.swift in Sources */,
 				0E7A60882736C681000AE39E /* SettingsView.swift in Sources */,
-				0E104C3927371511007B1FA2 /* Fixture.swift in Sources */,
 				0E3E254D2739B6100095D70E /* MergeErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE61D32274085080083FA4A /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Mergician/Development Mergician/Development/Fixtures";
+				DEVELOPMENT_ASSET_PATHS = Mergician/Development;
 				DEVELOPMENT_TEAM = HKXMUS7LVK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -522,7 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Mergician/Development Mergician/Development/Fixtures";
+				DEVELOPMENT_ASSET_PATHS = Mergician/Development;
 				DEVELOPMENT_TEAM = HKXMUS7LVK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
