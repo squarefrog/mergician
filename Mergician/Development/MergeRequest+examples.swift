@@ -31,7 +31,7 @@ extension MergeRequest {
                 commentCount: 0,
                 status: .ready,
                 approvals: Approvals(required: 2, received: 2)
-            ),
+            )
         ]
     }
 }

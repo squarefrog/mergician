@@ -24,13 +24,13 @@ extension XCTest {
     }
 }
 
-
 enum Fixture {
     static func load(_ resource: String) -> Data {
         guard let url = Bundle.module.url(forResource: resource, withExtension: "json") else {
             fatalError("Missing file: \(resource).json")
         }
 
+        // swiftlint:disable:next force_try
         return try! Data(contentsOf: url)
     }
 }

@@ -6,6 +6,7 @@ import SwiftUI
 
 @main
 struct MergicianApp: App {
+    // swiftlint:disable:next weak_delegate
     @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     var body: some Scene {
