@@ -1,35 +1,19 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var accessToken: String = ""
-    @State private var projectURL: String = ""
-    @State private var folderPath: String = ""
+    @EnvironmentObject var settings: Preferences
 
     var body: some View {
         Form {
-            SecureField("Access Token", text: $accessToken)
+            SecureField("Access Token", text: $settings.accessToken)
 
-            TextField("Project URL", text: $projectURL)
+            TextField("Project URL", text: $settings.projectURL)
 
             HStack {
-                TextField("Local Path", text: $folderPath)
+                TextField("Local Path", text: $settings.folderPath)
                 Button(action: chooseFolder) {
                     Text("Choose")
                 }
-            }
-
-            HStack {
-                Spacer()
-
-                Button("Cancel") {
-                    print("Cancel")
-                }
-                .keyboardShortcut(.cancelAction)
-
-                Button("OK") {
-                    print("OK")
-                }
-                .keyboardShortcut(.defaultAction)
             }
         }
 
@@ -42,7 +26,7 @@ struct SettingsView: View {
         panel.canChooseDirectories = true
 
         if panel.runModal() == .OK {
-            folderPath = panel.url?.path ?? ""
+            settings.folderPath = panel.url?.path ?? ""
         }
     }
 }

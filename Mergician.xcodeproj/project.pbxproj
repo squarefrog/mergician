@@ -19,6 +19,7 @@
 		0E3E254B2739B5F00095D70E /* ApprovalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254A2739B5F00095D70E /* ApprovalsView.swift */; };
 		0E3E254D2739B6100095D70E /* MergeErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254C2739B6100095D70E /* MergeErrorView.swift */; };
 		0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E25502739BE280095D70E /* AppDelegate.swift */; };
+		0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA4AE2742E54F0030EB3F /* Preferences.swift */; };
 		0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */; };
 		0E7A60882736C681000AE39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* SettingsView.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
@@ -50,6 +51,7 @@
 		0E3E254A2739B5F00095D70E /* ApprovalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalsView.swift; sourceTree = "<group>"; };
 		0E3E254C2739B6100095D70E /* MergeErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeErrorView.swift; sourceTree = "<group>"; };
 		0E3E25502739BE280095D70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E5BA4AE2742E54F0030EB3F /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+clearBackground.swift"; sourceTree = "<group>"; };
 		0E7A60872736C681000AE39E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0ED0180E2735AD3D00072589 /* Mergician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mergician.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0E7A60872736C681000AE39E /* SettingsView.swift */,
+				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */,
 				0E104C3A27371511007B1FA2 /* MergeRequest+examples.swift in Sources */,
 				0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */,
+				0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */,
 				0E104BF22736EB82007B1FA2 /* DateFormatter+relative.swift in Sources */,
 				0E104C5E27381B86007B1FA2 /* DataStore.swift in Sources */,
 				0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */,
