@@ -11,9 +11,12 @@ struct MergicianApp: App {
     var preferences = Preferences()
 
     var body: some Scene {
+        #if DEBUG
         WindowGroup {
-            Text("Hello world")
+            PopoverView()
+                .environmentObject(preferences)
         }
+        #endif
 
         Settings {
             SettingsView()
