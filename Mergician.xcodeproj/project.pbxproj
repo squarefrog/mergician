@@ -22,6 +22,7 @@
 		0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA4AE2742E54F0030EB3F /* Preferences.swift */; };
 		0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */; };
 		0E7A60882736C681000AE39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* SettingsView.swift */; };
+		0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB97330274C22F60067275A /* KeychainStorage.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
 		0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEAC36273C57C30028D245 /* PopoverView.swift */; };
@@ -54,6 +55,7 @@
 		0E5BA4AE2742E54F0030EB3F /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+clearBackground.swift"; sourceTree = "<group>"; };
 		0E7A60872736C681000AE39E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0EB97330274C22F60067275A /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		0ED0180E2735AD3D00072589 /* Mergician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mergician.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED018112735AD3D00072589 /* MergicianApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergicianApp.swift; sourceTree = "<group>"; };
 		0ED018152735AD3D00072589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				0E7A60872736C681000AE39E /* SettingsView.swift */,
 				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
+				0EB97330274C22F60067275A /* KeychainStorage.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				0E104C3A27371511007B1FA2 /* MergeRequest+examples.swift in Sources */,
 				0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */,
 				0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */,
+				0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */,
 				0E104BF22736EB82007B1FA2 /* DateFormatter+relative.swift in Sources */,
 				0E104C5E27381B86007B1FA2 /* DataStore.swift in Sources */,
 				0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */,
