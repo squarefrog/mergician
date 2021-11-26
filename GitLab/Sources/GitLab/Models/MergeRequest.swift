@@ -9,8 +9,7 @@ public struct MergeRequest: Decodable, Identifiable {
     public let author: Author
     public let mergeStatus: Status
     public let webUrl: URL
-
-    private(set) var approvals: Approvals?
+    public private(set) var approvals: Approvals?
 
     public mutating func update(with approvals: Approvals) {
         self.approvals = approvals

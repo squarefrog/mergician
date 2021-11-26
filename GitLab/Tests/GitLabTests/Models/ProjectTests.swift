@@ -1,10 +1,10 @@
 import XCTest
-@testable import GitLab
+import GitLab
 
 class ProjectTests: XCTestCase {
     func test_Project_CanBeDecoded() throws {
         let data = Fixture.load("project")
-        let decoder = JSONDecoder.default
+        let decoder = JSONDecoder.gitlab
 
         let project = try decoder.decode(Project.self, from: data)
 

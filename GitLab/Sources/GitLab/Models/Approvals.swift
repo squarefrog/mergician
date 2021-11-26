@@ -8,4 +8,9 @@ public struct Approvals: Decodable {
         case required = "approvalsRequired"
         case remaining = "approvalsLeft"
     }
+
+    public init(required: Int, remaining: Int) {
+        self.required = required
+        self.remaining = remaining
+    }
 }
