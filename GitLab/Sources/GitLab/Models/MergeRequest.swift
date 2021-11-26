@@ -5,6 +5,7 @@ public struct MergeRequest: Decodable, Identifiable {
     public let iid: Int
     public let title: String
     public let createdAt: Date
+    public let updatedAt: Date
     public let userNotesCount: Int
     public let author: Author
     public let mergeStatus: Status

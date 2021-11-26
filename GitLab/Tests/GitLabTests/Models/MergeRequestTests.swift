@@ -14,6 +14,7 @@ class MergeRequestTests: XCTestCase {
         XCTAssertEqual(mr.iid, 1234)
         XCTAssertEqual(mr.title, "Fix crash when logging out")
         XCTAssertEqual(mr.createdAt.timeIntervalSince1970, 1636021589.99)
+        XCTAssertEqual(mr.updatedAt.timeIntervalSince1970, 1636025055.332)
         XCTAssertEqual(mr.userNotesCount, 2)
         XCTAssertEqual(mr.mergeStatus, .unchecked)
         XCTAssertEqual(mr.webUrl.absoluteString, "https://example.site/project/repo/-/merge_requests/1234")

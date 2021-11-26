@@ -36,6 +36,7 @@
 		FA2FC46E2751049300D25B10 /* merge_requests.json in Resources */ = {isa = PBXBuildFile; fileRef = FA2FC46B2751049300D25B10 /* merge_requests.json */; };
 		FA2FC46F2751049300D25B10 /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = FA2FC46C2751049300D25B10 /* project.json */; };
 		FA2FC4702751049300D25B10 /* approvals.json in Resources */ = {isa = PBXBuildFile; fileRef = FA2FC46D2751049300D25B10 /* approvals.json */; };
+		FA2FC47327516ECC00D25B10 /* Date+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		FA2FC46B2751049300D25B10 /* merge_requests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = merge_requests.json; path = GitLab/Tests/GitLabTests/Resources/merge_requests.json; sourceTree = SOURCE_ROOT; };
 		FA2FC46C2751049300D25B10 /* project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = project.json; path = GitLab/Tests/GitLabTests/Resources/project.json; sourceTree = SOURCE_ROOT; };
 		FA2FC46D2751049300D25B10 /* approvals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = approvals.json; path = GitLab/Tests/GitLabTests/Resources/approvals.json; sourceTree = SOURCE_ROOT; };
+		FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+iso8601.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		0ED018222735AD3D00072589 /* MergicianTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA2FC47127516EBE00D25B10 /* Helpers */,
 				FA2FC4652751015400D25B10 /* Networking */,
 			);
 			path = MergicianTests;
@@ -258,6 +261,14 @@
 				FA2FC46C2751049300D25B10 /* project.json */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		FA2FC47127516EBE00D25B10 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2FC4672751017000D25B10 /* GitLabServiceAdapterTests.swift in Sources */,
+				FA2FC47327516ECC00D25B10 /* Date+iso8601.swift in Sources */,
 				FA2FC4692751018200D25B10 /* MockGitLabService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
