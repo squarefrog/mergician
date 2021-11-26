@@ -26,7 +26,6 @@
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
 		0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEAC36273C57C30028D245 /* PopoverView.swift */; };
-		0EE61D32274085080083FA4A /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE61D31274085080083FA4A /* ExampleTests.swift */; };
 		FA2FC45A2750EF8B00D25B10 /* NetworkServiceProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FC4592750EF8B00D25B10 /* NetworkServiceProviding.swift */; };
 		FA2FC45E2750F5E000D25B10 /* GitLabServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FC45D2750F5E000D25B10 /* GitLabServiceAdapter.swift */; };
 		FA2FC4602750FB5400D25B10 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FC45F2750FB5400D25B10 /* Project.swift */; };
@@ -72,7 +71,6 @@
 		0ED0181A2735AD3D00072589 /* Mergician.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mergician.entitlements; sourceTree = "<group>"; };
 		0ED0181F2735AD3D00072589 /* MergicianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MergicianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDEAC36273C57C30028D245 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
-		0EE61D31274085080083FA4A /* ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		FA2FC4592750EF8B00D25B10 /* NetworkServiceProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProviding.swift; sourceTree = "<group>"; };
 		FA2FC45D2750F5E000D25B10 /* GitLabServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLabServiceAdapter.swift; sourceTree = "<group>"; };
 		FA2FC45F2750FB5400D25B10 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				FA2FC4652751015400D25B10 /* Networking */,
-				0EE61D31274085080083FA4A /* ExampleTests.swift */,
 			);
 			path = MergicianTests;
 			sourceTree = "<group>";
@@ -420,7 +417,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2FC4672751017000D25B10 /* GitLabServiceAdapterTests.swift in Sources */,
-				0EE61D32274085080083FA4A /* ExampleTests.swift in Sources */,
 				FA2FC4692751018200D25B10 /* MockGitLabService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
