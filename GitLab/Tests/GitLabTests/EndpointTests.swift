@@ -41,7 +41,7 @@ final class EndpointTests: XCTestCase {
 
         XCTAssertEqual(
             session.request?.url?.absoluteString,
-            "https://git.abc.com/api/v4/projects/\(projectId)/merge_requests"
+            "https://git.abc.com/api/v4/projects/\(projectId)/merge_requests?state=opened"
         )
     }
 

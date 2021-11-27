@@ -33,7 +33,8 @@ public extension Endpoint {
 public extension Endpoint {
     /// Get all merge requests for a given `projectId`.
     static func mergeRequests(for projectId: Int) -> Endpoint {
-        Endpoint(path: "projects/\(projectId)/merge_requests")
+        let query = URLQueryItem(name: "state", value: "opened")
+        return Endpoint(path: "projects/\(projectId)/merge_requests", queryItems: [query])
     }
 }
 
