@@ -260,8 +260,9 @@
 				FA2FC46B2751049300D25B10 /* merge_requests.json */,
 				FA2FC46C2751049300D25B10 /* project.json */,
 			);
-			path = Fixtures;
-			sourceTree = "<group>";
+			name = Fixtures;
+			path = GitLab/Tests/GitLabTests/Resources;
+			sourceTree = SOURCE_ROOT;
 		};
 		FA2FC47127516EBE00D25B10 /* Helpers */ = {
 			isa = PBXGroup;
