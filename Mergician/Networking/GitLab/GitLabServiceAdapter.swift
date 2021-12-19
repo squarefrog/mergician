@@ -2,8 +2,6 @@ import Foundation
 import GitLab
 
 final class GitLabServiceAdapter: NetworkServiceProviding {
-    typealias Identifier = Int
-
     let service: GitLabServiceProtocol
 
     private let decoder = JSONDecoder.gitlab
@@ -12,13 +10,13 @@ final class GitLabServiceAdapter: NetworkServiceProviding {
         self.service = service
     }
 
-    func getProject(from url: URL) async throws -> Project<Identifier> {
+    func getProject(from url: URL) async throws -> Project {
         let data = try await service.get(.project(url: url))
         let gitlabProject = try decoder.decode(GitLab.Project.self, from: data)
         return Project(gitlabProject: gitlabProject)
     }
 
-    func getMergeRequests(for projectId: Identifier) async throws -> [MergeRequest] {
+    func getMergeRequests(for projectId: Int) async throws -> [MergeRequest] {
         let data = try await service.get(.mergeRequests(for: projectId))
         let gitlabMergeRequests = try decoder.decode([GitLab.MergeRequest].self, from: data)
         return gitlabMergeRequests.map(MergeRequest.init)
@@ -27,7 +25,7 @@ final class GitLabServiceAdapter: NetworkServiceProviding {
 
 // MARK: - Constructor Helpers
 
-private extension Project where Identifier == Int {
+private extension Project {
     init(gitlabProject: GitLab.Project) {
         self.id = gitlabProject.id
         self.name = gitlabProject.name

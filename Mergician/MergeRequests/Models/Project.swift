@@ -1,7 +1,7 @@
 import Foundation
 
-struct Project<Identifier> {
-    let id: Identifier
+struct Project {
+    let id: Int
     let name: String
     let url: URL
     let requiredApprovals: Int?
