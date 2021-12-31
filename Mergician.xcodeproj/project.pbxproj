@@ -31,6 +31,7 @@
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
 		0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEAC36273C57C30028D245 /* PopoverView.swift */; };
+		0EFB7520277F351F0067651C /* EmptyRepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFB751F277F351F0067651C /* EmptyRepoListView.swift */; };
 		0EFCCB902774C34A00AD5494 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFCCB8F2774C34A00AD5494 /* Repository.swift */; };
 		0EFCCB9227750BE200AD5494 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFCCB9127750BE200AD5494 /* Service.swift */; };
 		0EFCCB9C2775150E00AD5494 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFCCB9B2775150E00AD5494 /* RepositoryTests.swift */; };
@@ -85,6 +86,7 @@
 		0ED0181A2735AD3D00072589 /* Mergician.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mergician.entitlements; sourceTree = "<group>"; };
 		0ED0181F2735AD3D00072589 /* MergicianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MergicianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDEAC36273C57C30028D245 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		0EFB751F277F351F0067651C /* EmptyRepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRepoListView.swift; sourceTree = "<group>"; };
 		0EFCCB8F2774C34A00AD5494 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		0EFCCB9127750BE200AD5494 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		0EFCCB9B2775150E00AD5494 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		0E7A60862736C66A000AE39E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				0EFB751C277F34FB0067651C /* Repository */,
 				0EFCCB98277514EE00AD5494 /* Models */,
 				0EB97330274C22F60067275A /* KeychainStorage.swift */,
 				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
@@ -252,6 +255,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EFB751C277F34FB0067651C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0EFB751F277F351F0067651C /* EmptyRepoListView.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		0EFCCB98277514EE00AD5494 /* Models */ = {
@@ -462,6 +473,7 @@
 				0EAA6ACF277E378C00172ACE /* Array+Repository.swift in Sources */,
 				FA2FC45A2750EF8B00D25B10 /* NetworkServiceProviding.swift in Sources */,
 				0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */,
+				0EFB7520277F351F0067651C /* EmptyRepoListView.swift in Sources */,
 				FA2FC462275100ED00D25B10 /* GitLabServiceProtocol.swift in Sources */,
 				0EAA6ACD277E365600172ACE /* Store.swift in Sources */,
 				0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */,
