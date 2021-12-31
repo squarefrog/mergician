@@ -21,7 +21,12 @@
 		0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E25502739BE280095D70E /* AppDelegate.swift */; };
 		0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA4AE2742E54F0030EB3F /* Preferences.swift */; };
 		0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */; };
+		0E789871277C62DD007F0BBE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E789870277C62DD007F0BBE /* AppState.swift */; };
 		0E7A60882736C681000AE39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* SettingsView.swift */; };
+		0EAA6ACD277E365600172ACE /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA6ACC277E365600172ACE /* Store.swift */; };
+		0EAA6ACF277E378C00172ACE /* Array+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA6ACE277E378C00172ACE /* Array+Repository.swift */; };
+		0EAA6AD3277E392600172ACE /* RepoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA6AD2277E392600172ACE /* RepoReducer.swift */; };
+		0EAA6AD5277E3AEB00172ACE /* RepoReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA6AD4277E3AEB00172ACE /* RepoReducerTests.swift */; };
 		0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB97330274C22F60067275A /* KeychainStorage.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
@@ -67,7 +72,12 @@
 		0E3E25502739BE280095D70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5BA4AE2742E54F0030EB3F /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+clearBackground.swift"; sourceTree = "<group>"; };
+		0E789870277C62DD007F0BBE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		0E7A60872736C681000AE39E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0EAA6ACC277E365600172ACE /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		0EAA6ACE277E378C00172ACE /* Array+Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Repository.swift"; sourceTree = "<group>"; };
+		0EAA6AD2277E392600172ACE /* RepoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoReducer.swift; sourceTree = "<group>"; };
+		0EAA6AD4277E3AEB00172ACE /* RepoReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoReducerTests.swift; sourceTree = "<group>"; };
 		0EB97330274C22F60067275A /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		0ED0180E2735AD3D00072589 /* Mergician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mergician.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED018112735AD3D00072589 /* MergicianApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergicianApp.swift; sourceTree = "<group>"; };
@@ -123,6 +133,7 @@
 		0E104BF02736EB69007B1FA2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0EAA6ACE277E378C00172ACE /* Array+Repository.swift */,
 				0E104BF12736EB82007B1FA2 /* DateFormatter+relative.swift */,
 				0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */,
 			);
@@ -160,13 +171,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0E78986F277C62D6007F0BBE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0E789870277C62DD007F0BBE /* AppState.swift */,
+				0EAA6AD2277E392600172ACE /* RepoReducer.swift */,
+				0EAA6ACC277E365600172ACE /* Store.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		0E7A60862736C66A000AE39E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				0EFCCB98277514EE00AD5494 /* Models */,
-				0E7A60872736C681000AE39E /* SettingsView.swift */,
-				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
 				0EB97330274C22F60067275A /* KeychainStorage.swift */,
+				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
+				0E7A60872736C681000AE39E /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -194,6 +215,7 @@
 		0ED018102735AD3D00072589 /* Mergician */ = {
 			isa = PBXGroup;
 			children = (
+				0E78986F277C62D6007F0BBE /* Shared */,
 				FA2FC4582750EEDD00D25B10 /* Networking */,
 				0E104BE52736D659007B1FA2 /* MergeRequests */,
 				0E7A60862736C66A000AE39E /* Settings */,
@@ -245,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				0EFCCB9A277514FB00AD5494 /* Models */,
+				0EAA6AD4277E3AEB00172ACE /* RepoReducerTests.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -436,18 +459,22 @@
 				0E104C3A27371511007B1FA2 /* MergeRequest+examples.swift in Sources */,
 				0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */,
 				FA2FC4602750FB5400D25B10 /* Project.swift in Sources */,
+				0EAA6ACF277E378C00172ACE /* Array+Repository.swift in Sources */,
 				FA2FC45A2750EF8B00D25B10 /* NetworkServiceProviding.swift in Sources */,
 				0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */,
 				FA2FC462275100ED00D25B10 /* GitLabServiceProtocol.swift in Sources */,
+				0EAA6ACD277E365600172ACE /* Store.swift in Sources */,
 				0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */,
 				0E104BF22736EB82007B1FA2 /* DateFormatter+relative.swift in Sources */,
 				0EFCCB902774C34A00AD5494 /* Repository.swift in Sources */,
+				0EAA6AD3277E392600172ACE /* RepoReducer.swift in Sources */,
 				0E104C5E27381B86007B1FA2 /* DataStore.swift in Sources */,
 				FA2FC45E2750F5E000D25B10 /* GitLabServiceAdapter.swift in Sources */,
 				0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */,
 				0E104C53273725B7007B1FA2 /* MergeRequestList.swift in Sources */,
 				FA2FC4642751011C00D25B10 /* GitLabServiceFactory.swift in Sources */,
 				0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */,
+				0E789871277C62DD007F0BBE /* AppState.swift in Sources */,
 				0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */,
 				0EFCCB9227750BE200AD5494 /* Service.swift in Sources */,
 				0E104C5A2737DAE6007B1FA2 /* InfoView.swift in Sources */,
@@ -464,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2FC4672751017000D25B10 /* GitLabServiceAdapterTests.swift in Sources */,
+				0EAA6AD5277E3AEB00172ACE /* RepoReducerTests.swift in Sources */,
 				FA2FC47327516ECC00D25B10 /* Date+iso8601.swift in Sources */,
 				FA2FC4692751018200D25B10 /* MockGitLabService.swift in Sources */,
 				0EFCCB9C2775150E00AD5494 /* RepositoryTests.swift in Sources */,
