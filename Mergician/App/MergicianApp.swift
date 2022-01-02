@@ -9,8 +9,7 @@ struct MergicianApp: App {
     var body: some Scene {
         #if DEBUG
         WindowGroup {
-            PopoverView()
-                .environmentObject(preferences)
+            RepoSettingsView(store: Store(initialValue: .init(), reducer: repoReducer))
         }
         #endif
 
