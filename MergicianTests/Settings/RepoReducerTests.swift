@@ -43,7 +43,7 @@ class RepoReducerTests: XCTestCase {
         Repository(
             name: "name",
             accessToken: "token",
-            url: URL(string: "apple.com")!,
+            url: URL(string: "apple.com"),
             path: URL(fileURLWithPath: "/dev/null")
         )
     }
