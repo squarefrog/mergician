@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RepoSettingsView: View {
+struct RepoListView: View {
     @ObservedObject var store: Store<AppState, RepoAction>
     @State private var selection: Repository?
 
@@ -75,6 +75,6 @@ struct RepoSettingsView: View {
 
 struct RepoListView_Previews: PreviewProvider {
     static var previews: some View {
-        RepoSettingsView(store: Store(initialValue: AppState(), reducer: repoReducer))
+        RepoListView(store: Store(initialValue: AppState(), reducer: repoReducer))
     }
 }
