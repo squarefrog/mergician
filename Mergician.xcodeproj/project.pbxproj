@@ -31,6 +31,7 @@
 		0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB97330274C22F60067275A /* KeychainStorage.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
+		0EDCDD5D27C6B6D90037AD55 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0EDCDD5C27C6B6D90037AD55 /* ComposableArchitecture */; };
 		0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEAC36273C57C30028D245 /* PopoverView.swift */; };
 		0EFB7520277F351F0067651C /* EmptyRepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFB751F277F351F0067651C /* EmptyRepoListView.swift */; };
 		0EFCCB902774C34A00AD5494 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFCCB8F2774C34A00AD5494 /* Repository.swift */; };
@@ -110,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDCDD5D27C6B6D90037AD55 /* ComposableArchitecture in Frameworks */,
 				0E1DFEA62740016100C65514 /* GitLab in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +363,7 @@
 			name = Mergician;
 			packageProductDependencies = (
 				0E1DFEA52740016100C65514 /* GitLab */,
+				0EDCDD5C27C6B6D90037AD55 /* ComposableArchitecture */,
 			);
 			productName = Mergician;
 			productReference = 0ED0180E2735AD3D00072589 /* Mergician.app */;
@@ -412,6 +415,9 @@
 				Base,
 			);
 			mainGroup = 0ED018052735AD3D00072589;
+			packageReferences = (
+				0EDCDD5B27C6B6D90037AD55 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 0ED0180F2735AD3D00072589 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -778,10 +784,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		0EDCDD5B27C6B6D90037AD55 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		0E1DFEA52740016100C65514 /* GitLab */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GitLab;
+		};
+		0EDCDD5C27C6B6D90037AD55 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EDCDD5B27C6B6D90037AD55 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
