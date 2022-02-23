@@ -18,7 +18,12 @@ struct RepoListView: View {
                 // swiftlint:disable:next unused_closure_parameter
                 List($store.value.repos) { $repo in
                     NavigationLink(
-                        destination: Text(repo.name),
+                        destination: EditRepoView(
+                            repo: repo,
+                            update: {
+                                store.send(.update($0))
+                            }
+                        ),
                         tag: repo,
                         selection: $selection
                     ) {
@@ -37,14 +42,31 @@ struct RepoListView: View {
                 }
             }
             .toolbar {
-                Button(action: addNewRepository) {
-                    Label("Add Repository", systemImage: "plus")
+                ToolbarItem(placement: .navigation) {
+                    Button(action: toggleSidebar, label: {
+                        Image(systemName: "sidebar.leading")
+                    })
+                }
+
+                ToolbarItem {
+                    Button(action: addNewRepository) {
+                        Label("Add Repository", systemImage: "plus")
+                    }
                 }
             }
 
             EmptyRepoListView(action: addNewRepository)
         }
     }
+
+    private func toggleSidebar() {
+        NSApp.keyWindow?
+            .firstResponder?
+            .tryToPerform(
+                #selector(NSSplitViewController.toggleSidebar(_:)),
+                with: nil
+            )
+        }
 
     private func addNewRepository() {
         let repo = makeRepository()

@@ -9,12 +9,12 @@ struct MergicianApp: App {
     var body: some Scene {
         #if DEBUG
         WindowGroup {
-            RepoSettingsView(store: Store(initialValue: .init(), reducer: repoReducer))
+            RepoListView(store: Store(initialValue: .init(), reducer: repoReducer))
         }
         #endif
 
         Settings {
-            SettingsView()
+            RepoListView(store: Store(initialValue: .init(), reducer: repoReducer))
                 .frame(width: 350)
                 .environmentObject(preferences)
         }
