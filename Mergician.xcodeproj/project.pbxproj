@@ -51,6 +51,8 @@
 		FA3FD45927C8F41F00CD8BF6 /* RepositoryListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */; };
 		FA3FD45B27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */; };
 		FA3FD45D27C9167700CD8BF6 /* UUID+testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45C27C9167700CD8BF6 /* UUID+testing.swift */; };
+		FA3FD45F27C92E5600CD8BF6 /* EditRepositoryFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45E27C92E5600CD8BF6 /* EditRepositoryFeature.swift */; };
+		FA3FD46127C930F600CD8BF6 /* EditRepositoryFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD46027C930F600CD8BF6 /* EditRepositoryFeatureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListFeature.swift; sourceTree = "<group>"; };
 		FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListFeatureTests.swift; sourceTree = "<group>"; };
 		FA3FD45C27C9167700CD8BF6 /* UUID+testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUID+testing.swift"; sourceTree = "<group>"; };
+		FA3FD45E27C92E5600CD8BF6 /* EditRepositoryFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepositoryFeature.swift; sourceTree = "<group>"; };
+		FA3FD46027C930F600CD8BF6 /* EditRepositoryFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepositoryFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,7 @@
 				0EB97330274C22F60067275A /* KeychainStorage.swift */,
 				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
 				FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */,
+				FA3FD45E27C92E5600CD8BF6 /* EditRepositoryFeature.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 				0EFCCB9A277514FB00AD5494 /* Models */,
 				0EAA6AD4277E3AEB00172ACE /* RepoReducerTests.swift */,
 				FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */,
+				FA3FD46027C930F600CD8BF6 /* EditRepositoryFeatureTests.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -492,6 +498,7 @@
 				0EAA6ACF277E378C00172ACE /* Array+Repository.swift in Sources */,
 				FA2FC45A2750EF8B00D25B10 /* NetworkServiceProviding.swift in Sources */,
 				0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */,
+				FA3FD45F27C92E5600CD8BF6 /* EditRepositoryFeature.swift in Sources */,
 				0EFB7520277F351F0067651C /* EmptyRepoListView.swift in Sources */,
 				FA2FC462275100ED00D25B10 /* GitLabServiceProtocol.swift in Sources */,
 				0EAA6ACD277E365600172ACE /* Store.swift in Sources */,
@@ -522,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3FD46127C930F600CD8BF6 /* EditRepositoryFeatureTests.swift in Sources */,
 				FA2FC4672751017000D25B10 /* GitLabServiceAdapterTests.swift in Sources */,
 				0EAA6AD5277E3AEB00172ACE /* RepoReducerTests.swift in Sources */,
 				FA3FD45B27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift in Sources */,

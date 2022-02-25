@@ -12,7 +12,12 @@ struct Repository {
 
 extension Repository: Hashable {
     static func == (lhs: Repository, rhs: Repository) -> Bool {
-        lhs.id == rhs.id
+        lhs.id == rhs.id &&
+        lhs.name == rhs.name &&
+        lhs.service == rhs.service &&
+        lhs.accessToken == rhs.accessToken &&
+        lhs.url == rhs.url &&
+        lhs.path == rhs.path
     }
 
     func hash(into hasher: inout Hasher) {
