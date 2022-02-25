@@ -1,13 +1,13 @@
 import Foundation
 
 struct Repository {
-    var name: String
+    private(set) var id: UUID
+
+    var name: String = "Untitled"
     var service: Service = .gitlab
-    var accessToken: String
+    var accessToken: String = ""
     var url: URL?
     var path: URL?
-
-    private(set) var id = UUID()
 }
 
 extension Repository: Hashable {

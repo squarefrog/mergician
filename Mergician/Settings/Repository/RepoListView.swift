@@ -14,8 +14,6 @@ struct RepoListView: View {
                     .font(.body.bold())
                     .padding(.horizontal)
 
-                // https://github.com/realm/SwiftLint/issues/3790
-                // swiftlint:disable:next unused_closure_parameter
                 List($store.value.repos) { $repo in
                     NavigationLink(
                         destination: EditRepoView(
@@ -87,6 +85,7 @@ struct RepoListView: View {
 
     private func makeRepository() -> Repository {
         Repository(
+            id: UUID(),
             name: "Untitled",
             accessToken: "",
             url: nil,

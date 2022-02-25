@@ -41,6 +41,7 @@ class RepoReducerTests: XCTestCase {
 
     private func makeRepo() -> Repository {
         Repository(
+            id: UUID(),
             name: "name",
             accessToken: "token",
             url: URL(string: "apple.com"),

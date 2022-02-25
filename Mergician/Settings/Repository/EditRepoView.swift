@@ -65,7 +65,7 @@ struct EditRepoView: View {
 }
 
 struct EditRepoView_Previews: PreviewProvider {
-    static let repo = Repository(name: "My Repo", accessToken: "")
+    static let repo = Repository(id: UUID(), name: "My Repo", accessToken: "")
 
     static var previews: some View {
         EditRepoView(repo: repo, update: { _ in })

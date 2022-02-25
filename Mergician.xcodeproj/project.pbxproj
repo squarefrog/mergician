@@ -48,6 +48,9 @@
 		FA2FC46F2751049300D25B10 /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = FA2FC46C2751049300D25B10 /* project.json */; };
 		FA2FC4702751049300D25B10 /* approvals.json in Resources */ = {isa = PBXBuildFile; fileRef = FA2FC46D2751049300D25B10 /* approvals.json */; };
 		FA2FC47327516ECC00D25B10 /* Date+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */; };
+		FA3FD45927C8F41F00CD8BF6 /* RepositoryListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */; };
+		FA3FD45B27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */; };
+		FA3FD45D27C9167700CD8BF6 /* UUID+testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45C27C9167700CD8BF6 /* UUID+testing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +107,9 @@
 		FA2FC46C2751049300D25B10 /* project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = project.json; path = GitLab/Tests/GitLabTests/Resources/project.json; sourceTree = SOURCE_ROOT; };
 		FA2FC46D2751049300D25B10 /* approvals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = approvals.json; path = GitLab/Tests/GitLabTests/Resources/approvals.json; sourceTree = SOURCE_ROOT; };
 		FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+iso8601.swift"; sourceTree = "<group>"; };
+		FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListFeature.swift; sourceTree = "<group>"; };
+		FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListFeatureTests.swift; sourceTree = "<group>"; };
+		FA3FD45C27C9167700CD8BF6 /* UUID+testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUID+testing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 				0EFCCB98277514EE00AD5494 /* Models */,
 				0EB97330274C22F60067275A /* KeychainStorage.swift */,
 				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
+				FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -284,6 +291,7 @@
 			children = (
 				0EFCCB9A277514FB00AD5494 /* Models */,
 				0EAA6AD4277E3AEB00172ACE /* RepoReducerTests.swift */,
+				FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */,
+				FA3FD45C27C9167700CD8BF6 /* UUID+testing.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -494,6 +503,7 @@
 				FA2FC45E2750F5E000D25B10 /* GitLabServiceAdapter.swift in Sources */,
 				0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */,
 				0E104C53273725B7007B1FA2 /* MergeRequestList.swift in Sources */,
+				FA3FD45927C8F41F00CD8BF6 /* RepositoryListFeature.swift in Sources */,
 				FA2FC4642751011C00D25B10 /* GitLabServiceFactory.swift in Sources */,
 				0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */,
 				0E789871277C62DD007F0BBE /* AppState.swift in Sources */,
@@ -514,6 +524,8 @@
 			files = (
 				FA2FC4672751017000D25B10 /* GitLabServiceAdapterTests.swift in Sources */,
 				0EAA6AD5277E3AEB00172ACE /* RepoReducerTests.swift in Sources */,
+				FA3FD45B27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift in Sources */,
+				FA3FD45D27C9167700CD8BF6 /* UUID+testing.swift in Sources */,
 				FA2FC47327516ECC00D25B10 /* Date+iso8601.swift in Sources */,
 				FA2FC4692751018200D25B10 /* MockGitLabService.swift in Sources */,
 				0EFCCB9C2775150E00AD5494 /* RepositoryTests.swift in Sources */,
