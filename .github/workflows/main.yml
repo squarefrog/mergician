@@ -1,26 +1,20 @@
 name: CI
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
+on: [push]
 
 jobs:
   build:
+
     runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Codesign executable
-        env: 
+      - name: Install certificate
+        env:
           MACOS_CERTIFICATE: ${{ secrets.MACOS_CERTIFICATE }}
           MACOS_CERTIFICATE_PWD: ${{ secrets.MACOS_CERTIFICATE_PWD }}
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
-
         run: |
           KEYCHAIN_FILE=build.keychain
           security create-keychain -p $KEYCHAIN_PASSWORD $KEYCHAIN_FILE
@@ -33,6 +27,12 @@ jobs:
                           -T /usr/bin/codesign
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k $KEYCHAIN_PASSWORD $KEYCHAIN_FILE
 
-      - name: Build and test
+      - name: Test packages
+        run: |
+          cd GitLab
+          swift test
+          cd -
+
+      - name: Build and test project
         run: xcodebuild clean test -scheme 'Mergician' | xcpretty
 
