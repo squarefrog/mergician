@@ -37,25 +37,6 @@ final class RepositoryListFeatureTests: XCTestCase {
         }
     }
 
-    func test_Rename() throws {
-        let name = "new-name"
-        let repo = try XCTUnwrap(testRepositories.first)
-
-        let store = TestStore(
-            initialState: RepositoryListState(
-                repositories: testRepositories,
-                selected: UUID.testing()
-            ),
-            reducer: repositoryListReducer,
-            environment: RepositoryListEnvironment(uuid: UUID.testing))
-
-        store.send(.rename(name)) { state in
-            var renamedRepo = Repository(id: repo.id)
-            renamedRepo.name = name
-            state.repositories = [renamedRepo]
-        }
-    }
-
     func test_Delete_RemovesSelectedRepo() throws {
         let repo = try XCTUnwrap(testRepositories.first)
         let store = TestStore(

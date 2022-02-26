@@ -10,7 +10,6 @@ enum RepositoryListAction: BindableAction, Equatable {
     case binding(BindingAction<RepositoryListState>)
     case addNew
     case select(UUID?)
-    case rename(String)
     case delete
 }
 
@@ -34,16 +33,6 @@ let repositoryListReducer = Reducer<
 
     case .select(let repository):
         state.selected = repository
-        return .none
-
-    case .rename(let name):
-        if let index = state.repositories.firstIndex(where: {
-            $0.id == state.selected
-        }) {
-            var repo = state.repositories[index]
-            repo.name = name
-            state.repositories[index] = repo
-        }
         return .none
 
     case .delete:
