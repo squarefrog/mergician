@@ -27,11 +27,9 @@ jobs:
                           -T /usr/bin/codesign
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k $KEYCHAIN_PASSWORD $KEYCHAIN_FILE
 
-      - name: Test packages
-        run: |
-          cd GitLab
-          swift test
-          cd -
+      - name: Test GitLab package
+      - working-directory: ./GitLab
+      - run: swift test
 
       - name: Build and test project
         run: xcodebuild clean test -scheme 'Mergician' | xcpretty
