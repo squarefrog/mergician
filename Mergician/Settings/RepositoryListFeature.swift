@@ -9,7 +9,7 @@ struct RepositoryListState: Equatable {
 enum RepositoryListAction: BindableAction, Equatable {
     case binding(BindingAction<RepositoryListState>)
     case addNew
-    case select(UUID)
+    case select(UUID?)
     case rename(String)
     case delete
 }
