@@ -4,6 +4,7 @@ import XCTest
 class RepositoryTests: XCTestCase {
     func test_Repository_ConfirmsToCodable() throws {
         let repo = Repository(
+            id: UUID(),
             name: "Foo",
             accessToken: "Bar",
             url: URL(string: "apple.com")!,

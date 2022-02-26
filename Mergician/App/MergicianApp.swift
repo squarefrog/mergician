@@ -1,23 +1,33 @@
+import ComposableArchitecture
 import SwiftUI
 
 @main
 struct MergicianApp: App {
     // swiftlint:disable:next weak_delegate
     @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    var preferences = Preferences()
 
     var body: some Scene {
         #if DEBUG
         WindowGroup {
-            PopoverView()
-                .environmentObject(preferences)
+            RepoListView(
+                store: Store(
+                    initialState: RepositoryListState(),
+                    reducer: repositoryListReducer,
+                    environment: RepositoryListEnvironment(uuid: { UUID() })
+                )
+            )
         }
         #endif
 
         Settings {
-            SettingsView()
+            RepoListView(
+                store: Store(
+                    initialState: RepositoryListState(),
+                    reducer: repositoryListReducer,
+                    environment: RepositoryListEnvironment(uuid: { UUID() })
+                )
+            )
                 .frame(width: 350)
-                .environmentObject(preferences)
         }
     }
 }

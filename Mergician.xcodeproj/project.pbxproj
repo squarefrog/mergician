@@ -19,13 +19,16 @@
 		0E3E254B2739B5F00095D70E /* ApprovalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254A2739B5F00095D70E /* ApprovalsView.swift */; };
 		0E3E254D2739B6100095D70E /* MergeErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254C2739B6100095D70E /* MergeErrorView.swift */; };
 		0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E25502739BE280095D70E /* AppDelegate.swift */; };
-		0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA4AE2742E54F0030EB3F /* Preferences.swift */; };
 		0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */; };
-		0E7A60882736C681000AE39E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* SettingsView.swift */; };
+		0E7A60882736C681000AE39E /* EditRepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* EditRepoView.swift */; };
+		0EAA6ACF277E378C00172ACE /* Array+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA6ACE277E378C00172ACE /* Array+Repository.swift */; };
+		0EB19816277F567400E5F7C0 /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB19815277F567400E5F7C0 /* RepoListView.swift */; };
 		0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB97330274C22F60067275A /* KeychainStorage.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
 		0ED018162735AD3D00072589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED018152735AD3D00072589 /* Assets.xcassets */; };
+		0EDCDD5D27C6B6D90037AD55 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0EDCDD5C27C6B6D90037AD55 /* ComposableArchitecture */; };
 		0EDEAC37273C57C30028D245 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEAC36273C57C30028D245 /* PopoverView.swift */; };
+		0EFB7520277F351F0067651C /* EmptyRepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFB751F277F351F0067651C /* EmptyRepoListView.swift */; };
 		0EFCCB902774C34A00AD5494 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFCCB8F2774C34A00AD5494 /* Repository.swift */; };
 		0EFCCB9227750BE200AD5494 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFCCB9127750BE200AD5494 /* Service.swift */; };
 		0EFCCB9C2775150E00AD5494 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFCCB9B2775150E00AD5494 /* RepositoryTests.swift */; };
@@ -40,6 +43,11 @@
 		FA2FC46F2751049300D25B10 /* project.json in Resources */ = {isa = PBXBuildFile; fileRef = FA2FC46C2751049300D25B10 /* project.json */; };
 		FA2FC4702751049300D25B10 /* approvals.json in Resources */ = {isa = PBXBuildFile; fileRef = FA2FC46D2751049300D25B10 /* approvals.json */; };
 		FA2FC47327516ECC00D25B10 /* Date+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */; };
+		FA3FD45927C8F41F00CD8BF6 /* RepositoryListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */; };
+		FA3FD45B27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */; };
+		FA3FD45D27C9167700CD8BF6 /* UUID+testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45C27C9167700CD8BF6 /* UUID+testing.swift */; };
+		FA3FD45F27C92E5600CD8BF6 /* EditRepositoryFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD45E27C92E5600CD8BF6 /* EditRepositoryFeature.swift */; };
+		FA3FD46127C930F600CD8BF6 /* EditRepositoryFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FD46027C930F600CD8BF6 /* EditRepositoryFeatureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +73,10 @@
 		0E3E254A2739B5F00095D70E /* ApprovalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalsView.swift; sourceTree = "<group>"; };
 		0E3E254C2739B6100095D70E /* MergeErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeErrorView.swift; sourceTree = "<group>"; };
 		0E3E25502739BE280095D70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E5BA4AE2742E54F0030EB3F /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+clearBackground.swift"; sourceTree = "<group>"; };
-		0E7A60872736C681000AE39E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0E7A60872736C681000AE39E /* EditRepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepoView.swift; sourceTree = "<group>"; };
+		0EAA6ACE277E378C00172ACE /* Array+Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Repository.swift"; sourceTree = "<group>"; };
+		0EB19815277F567400E5F7C0 /* RepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
 		0EB97330274C22F60067275A /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		0ED0180E2735AD3D00072589 /* Mergician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mergician.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED018112735AD3D00072589 /* MergicianApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergicianApp.swift; sourceTree = "<group>"; };
@@ -75,6 +84,7 @@
 		0ED0181A2735AD3D00072589 /* Mergician.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mergician.entitlements; sourceTree = "<group>"; };
 		0ED0181F2735AD3D00072589 /* MergicianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MergicianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDEAC36273C57C30028D245 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		0EFB751F277F351F0067651C /* EmptyRepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRepoListView.swift; sourceTree = "<group>"; };
 		0EFCCB8F2774C34A00AD5494 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		0EFCCB9127750BE200AD5494 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		0EFCCB9B2775150E00AD5494 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
@@ -89,6 +99,11 @@
 		FA2FC46C2751049300D25B10 /* project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = project.json; path = GitLab/Tests/GitLabTests/Resources/project.json; sourceTree = SOURCE_ROOT; };
 		FA2FC46D2751049300D25B10 /* approvals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = approvals.json; path = GitLab/Tests/GitLabTests/Resources/approvals.json; sourceTree = SOURCE_ROOT; };
 		FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+iso8601.swift"; sourceTree = "<group>"; };
+		FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListFeature.swift; sourceTree = "<group>"; };
+		FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListFeatureTests.swift; sourceTree = "<group>"; };
+		FA3FD45C27C9167700CD8BF6 /* UUID+testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUID+testing.swift"; sourceTree = "<group>"; };
+		FA3FD45E27C92E5600CD8BF6 /* EditRepositoryFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepositoryFeature.swift; sourceTree = "<group>"; };
+		FA3FD46027C930F600CD8BF6 /* EditRepositoryFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepositoryFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDCDD5D27C6B6D90037AD55 /* ComposableArchitecture in Frameworks */,
 				0E1DFEA62740016100C65514 /* GitLab in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +139,7 @@
 		0E104BF02736EB69007B1FA2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0EAA6ACE277E378C00172ACE /* Array+Repository.swift */,
 				0E104BF12736EB82007B1FA2 /* DateFormatter+relative.swift */,
 				0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */,
 			);
@@ -163,10 +180,11 @@
 		0E7A60862736C66A000AE39E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				0EFB751C277F34FB0067651C /* Repository */,
 				0EFCCB98277514EE00AD5494 /* Models */,
-				0E7A60872736C681000AE39E /* SettingsView.swift */,
-				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
 				0EB97330274C22F60067275A /* KeychainStorage.swift */,
+				FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */,
+				FA3FD45E27C92E5600CD8BF6 /* EditRepositoryFeature.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -232,6 +250,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0EFB751C277F34FB0067651C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0EFB751F277F351F0067651C /* EmptyRepoListView.swift */,
+				0E7A60872736C681000AE39E /* EditRepoView.swift */,
+				0EB19815277F567400E5F7C0 /* RepoListView.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		0EFCCB98277514EE00AD5494 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				0EFCCB9A277514FB00AD5494 /* Models */,
+				FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */,
+				FA3FD46027C930F600CD8BF6 /* EditRepositoryFeatureTests.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -301,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2FC47227516ECC00D25B10 /* Date+iso8601.swift */,
+				FA3FD45C27C9167700CD8BF6 /* UUID+testing.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -324,6 +355,7 @@
 			name = Mergician;
 			packageProductDependencies = (
 				0E1DFEA52740016100C65514 /* GitLab */,
+				0EDCDD5C27C6B6D90037AD55 /* ComposableArchitecture */,
 			);
 			productName = Mergician;
 			productReference = 0ED0180E2735AD3D00072589 /* Mergician.app */;
@@ -375,6 +407,9 @@
 				Base,
 			);
 			mainGroup = 0ED018052735AD3D00072589;
+			packageReferences = (
+				0EDCDD5B27C6B6D90037AD55 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 0ED0180F2735AD3D00072589 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,8 +471,11 @@
 				0E104C3A27371511007B1FA2 /* MergeRequest+examples.swift in Sources */,
 				0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */,
 				FA2FC4602750FB5400D25B10 /* Project.swift in Sources */,
+				0EB19816277F567400E5F7C0 /* RepoListView.swift in Sources */,
+				0EAA6ACF277E378C00172ACE /* Array+Repository.swift in Sources */,
 				FA2FC45A2750EF8B00D25B10 /* NetworkServiceProviding.swift in Sources */,
-				0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */,
+				FA3FD45F27C92E5600CD8BF6 /* EditRepositoryFeature.swift in Sources */,
+				0EFB7520277F351F0067651C /* EmptyRepoListView.swift in Sources */,
 				FA2FC462275100ED00D25B10 /* GitLabServiceProtocol.swift in Sources */,
 				0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */,
 				0E104BF22736EB82007B1FA2 /* DateFormatter+relative.swift in Sources */,
@@ -446,6 +484,7 @@
 				FA2FC45E2750F5E000D25B10 /* GitLabServiceAdapter.swift in Sources */,
 				0E104C562737D7D6007B1FA2 /* Comments.swift in Sources */,
 				0E104C53273725B7007B1FA2 /* MergeRequestList.swift in Sources */,
+				FA3FD45927C8F41F00CD8BF6 /* RepositoryListFeature.swift in Sources */,
 				FA2FC4642751011C00D25B10 /* GitLabServiceFactory.swift in Sources */,
 				0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */,
 				0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */,
@@ -454,7 +493,7 @@
 				0E1BDB07274046F600E0DA74 /* MergeRequest.swift in Sources */,
 				0E104C582737D80D007B1FA2 /* MergeRequestRow.swift in Sources */,
 				0E3E254B2739B5F00095D70E /* ApprovalsView.swift in Sources */,
-				0E7A60882736C681000AE39E /* SettingsView.swift in Sources */,
+				0E7A60882736C681000AE39E /* EditRepoView.swift in Sources */,
 				0E3E254D2739B6100095D70E /* MergeErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +502,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3FD46127C930F600CD8BF6 /* EditRepositoryFeatureTests.swift in Sources */,
 				FA2FC4672751017000D25B10 /* GitLabServiceAdapterTests.swift in Sources */,
+				FA3FD45B27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift in Sources */,
+				FA3FD45D27C9167700CD8BF6 /* UUID+testing.swift in Sources */,
 				FA2FC47327516ECC00D25B10 /* Date+iso8601.swift in Sources */,
 				FA2FC4692751018200D25B10 /* MockGitLabService.swift in Sources */,
 				0EFCCB9C2775150E00AD5494 /* RepositoryTests.swift in Sources */,
@@ -734,10 +776,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		0EDCDD5B27C6B6D90037AD55 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		0E1DFEA52740016100C65514 /* GitLab */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GitLab;
+		};
+		0EDCDD5C27C6B6D90037AD55 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EDCDD5B27C6B6D90037AD55 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
