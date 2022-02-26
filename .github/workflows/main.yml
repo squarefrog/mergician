@@ -1,34 +1,36 @@
 name: CI
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
+on: [push]
 
 jobs:
   build:
+
     runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Codesign executable
-        env: 
+      - name: Install certificate
+        env:
           MACOS_CERTIFICATE: ${{ secrets.MACOS_CERTIFICATE }}
           MACOS_CERTIFICATE_PWD: ${{ secrets.MACOS_CERTIFICATE_PWD }}
           KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
-          KEYCHAIN_NAME: ${{ secrets.KEYCHAIN_NAME }}
-
         run: |
-          echo $MACOS_CERTIFICATE | base64 —-decode > certificate.p12
-          security create-keychain -p $KEYCHAIN_PASSWORD $KEYCHAIN_NAME
-          security default-keychain -s $KEYCHAIN_NAME
-          security unlock-keychain -p $KEYCHAIN_PASSWORD $KEYCHAIN_NAME
-          security import certificate.p12 -k $KEYCHAIN_NAME -P $MACOS_CERTIFICATE_PWD -T /usr/bin/codesign
-          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k $KEYCHAIN_PASSWORD $KEYCHAIN_NAME
+          KEYCHAIN_FILE=build.keychain
+          security create-keychain -p $KEYCHAIN_PASSWORD $KEYCHAIN_FILE
+          security default-keychain -s $KEYCHAIN_FILE
+          security unlock-keychain -p $KEYCHAIN_PASSWORD $KEYCHAIN_FILE
+          security import <(echo $MACOS_CERTIFICATE | base64 --decode) \
+                          -f pkcs12 \
+                          -k $KEYCHAIN_FILE \
+                          -P $MACOS_CERTIFICATE_PWD \
+                          -T /usr/bin/codesign
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k $KEYCHAIN_PASSWORD $KEYCHAIN_FILE
 
-      - name: Build and test
+      - name: Test GitLab package
+        working-directory: ./GitLab
+        run: swift test
+
+      - name: Build and test project
         run: xcodebuild clean test -scheme 'Mergician' | xcpretty
+
