@@ -1,5 +1,5 @@
 import ComposableArchitecture
-import Foundation
+import SwiftUI
 
 struct EditRepositoryState: Equatable {
     var repository: Repository
@@ -30,15 +30,14 @@ enum EditRepositoryAction: BindableAction, Equatable {
     case binding(BindingAction<EditRepositoryState>)
     case save
     case cancel
+    case showPathPicker
 }
 
 struct EditRepositoryEnvironment {
 }
 
 let editRepositoryReducer = Reducer<
-    EditRepositoryState,
-    EditRepositoryAction,
-    EditRepositoryEnvironment
+    EditRepositoryState, EditRepositoryAction, EditRepositoryEnvironment
 > { state, action, _ in
     switch action {
     case .binding:
@@ -63,6 +62,15 @@ let editRepositoryReducer = Reducer<
         state.accessToken = repo.accessToken
         state.url = repo.url?.absoluteString ?? ""
         state.path = repo.path?.path ?? ""
+        return .none
+
+    case .showPathPicker:
+        let panel = NSOpenPanel()
+        panel.canChooseFiles = false
+        panel.canChooseDirectories = true
+        if panel.runModal() == .OK {
+            state.path = panel.url?.path ?? ""
+        }
         return .none
     }
 }

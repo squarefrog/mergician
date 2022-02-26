@@ -1,66 +1,37 @@
+import ComposableArchitecture
 import SwiftUI
 
 struct EditRepoView: View {
-    let repo: Repository
-    let update: ((Repository) -> Void)
-
-    @State private var accessToken: String
-    @State private var projectURL: String
-    @State private var localURL: String
-
-    init(repo: Repository, update: @escaping ((Repository) -> Void)) {
-        self.repo = repo
-        self.update = update
-
-        _accessToken = State(wrappedValue: repo.accessToken)
-        _projectURL = State(wrappedValue: repo.url?.absoluteString ?? "")
-        _localURL = State(wrappedValue: repo.path?.absoluteString ?? "")
-    }
+    let store: Store<EditRepositoryState, EditRepositoryAction>
 
     var body: some View {
-        Form {
-            SecureField("Access Token", text: $accessToken)
+        WithViewStore(self.store) { viewStore in
+            Form {
+                TextField("Name", text: viewStore.binding(\.$name))
 
-            TextField("Project URL", text: $projectURL)
+                SecureField("Access Token", text: viewStore.binding(\.$accessToken))
 
-            HStack {
-                TextField("Local Path", text: $localURL)
-                Button(action: chooseFolder) {
-                    Text("Choose")
+                TextField("Project URL", text: viewStore.binding(\.$url))
+
+                HStack {
+                    TextField("Local Path", text: viewStore.binding(\.$path))
+                    Button("Choose") {
+                        viewStore.send(.showPathPicker)
+                    }
+                }
+
+                HStack {
+                    Button("Cancel") {
+                        viewStore.send(.cancel)
+                    }
+                    Button("Save") {
+                        viewStore.send(.save)
+                    }
                 }
             }
-
-            HStack {
-                Button("Cancel", action: cancel)
-                Button("Save", action: save)
-            }
+            .frame(height: 100)
+            .padding()
         }
-        .frame(height: 100)
-        .padding()
-    }
-
-    private func chooseFolder() {
-        let panel = NSOpenPanel()
-        panel.canChooseFiles = false
-        panel.canChooseDirectories = true
-
-        if panel.runModal() == .OK {
-            localURL = panel.url?.path ?? ""
-        }
-    }
-
-    private func cancel() {
-        accessToken = repo.accessToken
-        projectURL = repo.url?.absoluteString ?? ""
-        localURL = repo.path?.absoluteString ?? ""
-    }
-
-    private func save() {
-        var repo = self.repo
-        repo.accessToken = accessToken
-        repo.url = URL(string: projectURL)
-        repo.path = URL(fileURLWithPath: localURL)
-        update(repo)
     }
 }
 
@@ -68,7 +39,13 @@ struct EditRepoView_Previews: PreviewProvider {
     static let repo = Repository(id: UUID(), name: "My Repo", accessToken: "")
 
     static var previews: some View {
-        EditRepoView(repo: repo, update: { _ in })
+        EditRepoView(
+            store: Store(
+                initialState: EditRepositoryState(repository: repo),
+                reducer: editRepositoryReducer,
+                environment: EditRepositoryEnvironment()
+            )
+        )
             .frame(width: 350)
     }
 }

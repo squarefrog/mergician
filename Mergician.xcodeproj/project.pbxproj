@@ -19,11 +19,9 @@
 		0E3E254B2739B5F00095D70E /* ApprovalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254A2739B5F00095D70E /* ApprovalsView.swift */; };
 		0E3E254D2739B6100095D70E /* MergeErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E254C2739B6100095D70E /* MergeErrorView.swift */; };
 		0E3E25512739BE280095D70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E25502739BE280095D70E /* AppDelegate.swift */; };
-		0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA4AE2742E54F0030EB3F /* Preferences.swift */; };
 		0E60A2B0273FE27F00771358 /* NSTableView+clearBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */; };
 		0E7A60882736C681000AE39E /* EditRepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A60872736C681000AE39E /* EditRepoView.swift */; };
 		0EAA6ACF277E378C00172ACE /* Array+Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA6ACE277E378C00172ACE /* Array+Repository.swift */; };
-		0EAA6AD5277E3AEB00172ACE /* RepoReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA6AD4277E3AEB00172ACE /* RepoReducerTests.swift */; };
 		0EB19816277F567400E5F7C0 /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB19815277F567400E5F7C0 /* RepoListView.swift */; };
 		0EB97331274C22F60067275A /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB97330274C22F60067275A /* KeychainStorage.swift */; };
 		0ED018122735AD3D00072589 /* MergicianApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED018112735AD3D00072589 /* MergicianApp.swift */; };
@@ -75,11 +73,9 @@
 		0E3E254A2739B5F00095D70E /* ApprovalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalsView.swift; sourceTree = "<group>"; };
 		0E3E254C2739B6100095D70E /* MergeErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeErrorView.swift; sourceTree = "<group>"; };
 		0E3E25502739BE280095D70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E5BA4AE2742E54F0030EB3F /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		0E60A2AF273FE27F00771358 /* NSTableView+clearBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTableView+clearBackground.swift"; sourceTree = "<group>"; };
 		0E7A60872736C681000AE39E /* EditRepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRepoView.swift; sourceTree = "<group>"; };
 		0EAA6ACE277E378C00172ACE /* Array+Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Repository.swift"; sourceTree = "<group>"; };
-		0EAA6AD4277E3AEB00172ACE /* RepoReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoReducerTests.swift; sourceTree = "<group>"; };
 		0EB19815277F567400E5F7C0 /* RepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
 		0EB97330274C22F60067275A /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		0ED0180E2735AD3D00072589 /* Mergician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mergician.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,7 +183,6 @@
 				0EFB751C277F34FB0067651C /* Repository */,
 				0EFCCB98277514EE00AD5494 /* Models */,
 				0EB97330274C22F60067275A /* KeychainStorage.swift */,
-				0E5BA4AE2742E54F0030EB3F /* Preferences.swift */,
 				FA3FD45827C8F41F00CD8BF6 /* RepositoryListFeature.swift */,
 				FA3FD45E27C92E5600CD8BF6 /* EditRepositoryFeature.swift */,
 			);
@@ -278,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				0EFCCB9A277514FB00AD5494 /* Models */,
-				0EAA6AD4277E3AEB00172ACE /* RepoReducerTests.swift */,
 				FA3FD45A27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift */,
 				FA3FD46027C930F600CD8BF6 /* EditRepositoryFeatureTests.swift */,
 			);
@@ -480,7 +474,6 @@
 				0EB19816277F567400E5F7C0 /* RepoListView.swift in Sources */,
 				0EAA6ACF277E378C00172ACE /* Array+Repository.swift in Sources */,
 				FA2FC45A2750EF8B00D25B10 /* NetworkServiceProviding.swift in Sources */,
-				0E5BA4AF2742E54F0030EB3F /* Preferences.swift in Sources */,
 				FA3FD45F27C92E5600CD8BF6 /* EditRepositoryFeature.swift in Sources */,
 				0EFB7520277F351F0067651C /* EmptyRepoListView.swift in Sources */,
 				FA2FC462275100ED00D25B10 /* GitLabServiceProtocol.swift in Sources */,
@@ -511,7 +504,6 @@
 			files = (
 				FA3FD46127C930F600CD8BF6 /* EditRepositoryFeatureTests.swift in Sources */,
 				FA2FC4672751017000D25B10 /* GitLabServiceAdapterTests.swift in Sources */,
-				0EAA6AD5277E3AEB00172ACE /* RepoReducerTests.swift in Sources */,
 				FA3FD45B27C8FA2300CD8BF6 /* RepositoryListFeatureTests.swift in Sources */,
 				FA3FD45D27C9167700CD8BF6 /* UUID+testing.swift in Sources */,
 				FA2FC47327516ECC00D25B10 /* Date+iso8601.swift in Sources */,

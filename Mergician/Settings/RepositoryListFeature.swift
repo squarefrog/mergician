@@ -6,7 +6,8 @@ struct RepositoryListState: Equatable {
     @BindableState var selected: Repository?
 }
 
-enum RepositoryListAction: Equatable {
+enum RepositoryListAction: BindableAction, Equatable {
+    case binding(BindingAction<RepositoryListState>)
     case addNew
     case select(Repository)
     case delete
@@ -22,6 +23,9 @@ let repositoryListReducer = Reducer<
     RepositoryListEnvironment
 > { state, action, environment in
     switch action {
+    case .binding:
+        return .none
+
     case .addNew:
         let repository = Repository(id: environment.uuid())
         state.repositories.append(repository)
