@@ -20,6 +20,11 @@ struct RepoListView: View {
                                     reducer: editRepositoryReducer,
                                     environment: EditRepositoryEnvironment()
                                 )
+                            ),
+                            tag: repo.id,
+                            selection: viewStore.binding(
+                                get: \.selected,
+                                send: RepositoryListAction.select
                             )
                         ) {
                             Text(repo.name)
