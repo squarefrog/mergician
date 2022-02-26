@@ -3,13 +3,13 @@ import SwiftUI
 
 struct RepositoryListState: Equatable {
     var repositories: [Repository] = []
-    @BindableState var selected: Repository?
+    @BindableState var selected: UUID?
 }
 
 enum RepositoryListAction: BindableAction, Equatable {
     case binding(BindingAction<RepositoryListState>)
     case addNew
-    case select(Repository)
+    case select(UUID)
     case rename(String)
     case delete
 }
@@ -30,7 +30,7 @@ let repositoryListReducer = Reducer<
     case .addNew:
         let repository = Repository(id: environment.uuid())
         state.repositories.append(repository)
-        return Effect(value: .select(repository))
+        return Effect(value: .select(repository.id))
 
     case .select(let repository):
         state.selected = repository
@@ -38,7 +38,7 @@ let repositoryListReducer = Reducer<
 
     case .rename(let name):
         if let index = state.repositories.firstIndex(where: {
-            $0.id == state.selected?.id
+            $0.id == state.selected
         }) {
             var repo = state.repositories[index]
             repo.name = name
@@ -49,7 +49,7 @@ let repositoryListReducer = Reducer<
     case .delete:
         if let selected = state.selected {
             state.selected = nil
-            state.repositories.removeAll { $0 == selected }
+            state.repositories.removeAll { $0.id == selected }
         }
         return .none
     }

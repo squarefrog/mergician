@@ -4,7 +4,6 @@ import XCTest
 @testable import Mergician
 
 final class RepositoryListFeatureTests: XCTestCase {
-    let testScheduler = DispatchQueue.test
     var testRepositories: [Repository] = [
         Repository(id: UUID.testing())
     ]
@@ -21,8 +20,8 @@ final class RepositoryListFeatureTests: XCTestCase {
             state.repositories.append(repo)
         }
 
-        store.receive(.select(repo)) { state in
-            state.selected = repo
+        store.receive(.select(repo.id)) { state in
+            state.selected = repo.id
         }
     }
 
@@ -33,8 +32,8 @@ final class RepositoryListFeatureTests: XCTestCase {
             reducer: repositoryListReducer,
             environment: RepositoryListEnvironment(uuid: UUID.testing))
 
-        store.send(.select(repo)) { state in
-            state.selected = repo
+        store.send(.select(repo.id)) { state in
+            state.selected = repo.id
         }
     }
 
@@ -45,15 +44,15 @@ final class RepositoryListFeatureTests: XCTestCase {
         let store = TestStore(
             initialState: RepositoryListState(
                 repositories: testRepositories,
-                selected: repo
+                selected: UUID.testing()
             ),
             reducer: repositoryListReducer,
             environment: RepositoryListEnvironment(uuid: UUID.testing))
 
         store.send(.rename(name)) { state in
-            var repo = Repository(id: UUID.testing())
-            repo.name = name
-            state.repositories = [repo]
+            var renamedRepo = Repository(id: repo.id)
+            renamedRepo.name = name
+            state.repositories = [renamedRepo]
         }
     }
 
@@ -62,7 +61,7 @@ final class RepositoryListFeatureTests: XCTestCase {
         let store = TestStore(
             initialState: RepositoryListState(
                 repositories: testRepositories,
-                selected: repo
+                selected: repo.id
             ),
             reducer: repositoryListReducer,
             environment: RepositoryListEnvironment(uuid: UUID.testing))
