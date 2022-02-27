@@ -37,7 +37,6 @@ final class EditRepositoryFeatureTests: XCTestCase {
         mutateStore(store, using: makeEditedRepository())
 
         store.send(.cancel) { state in
-            state.focusedField = nil
             state.name = self.repo.name
             state.service = self.repo.service
             state.accessToken = self.repo.accessToken

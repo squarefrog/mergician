@@ -4,7 +4,6 @@ import SwiftUI
 struct EditRepositoryState: Equatable {
     var repository: Repository
 
-    @BindableState var focusedField: Field?
     @BindableState var name: String
     @BindableState var service: Service
     @BindableState var accessToken: String
@@ -57,7 +56,6 @@ let editRepositoryReducer = Reducer<
 
     case .cancel:
         let repo = state.repository
-        state.focusedField = nil
         state.name = repo.name
         state.accessToken = repo.accessToken
         state.url = repo.url?.absoluteString ?? ""
