@@ -31,8 +31,8 @@ let repositoryListReducer = Reducer<
         state.repositories.append(repository)
         return Effect(value: .select(repository.id))
 
-    case .select(let repository):
-        state.selected = repository
+    case .select(let id):
+        state.selected = id
         return .none
 
     case .delete:
